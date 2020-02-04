@@ -1,0 +1,23 @@
+//ABSTRACT 
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+//BASE
+@import "./base/base";
+@import "./base/utilities";
+@import "./base/typography";
+
+//COMPONENTS
+@import "./components/button";
+@import "./components/cards";
+@import "./components/offer";
+@import "./components/offers";
+@import "./components/atractions";
+@import "./components/map";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/footer-details";
+
+//PAGES
+@import "./pages/home";

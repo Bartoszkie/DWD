@@ -1,0 +1,14 @@
+<svg id="bowling" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <path id="Path" d="M72,36A35.986,35.986,0,0,1,38.6,71.9c-.857.057-1.729.1-2.6.1s-1.743-.029-2.6-.1A36,36,0,1,1,72,36Z" fill="#324a5e"/>
+  <path id="Path-2" data-name="Path" d="M5.1,16.671C2.086,19.486,0,25.657,0,32.814c0,5.071,1.043,13.414,2.729,16.643H14.814c1.671-3.243,2.729-11.586,2.729-16.643,0-7.114-2.057-13.243-5.029-16.086a1.59,1.59,0,0,1-.229-1.857,12.583,12.583,0,0,0,1.486-6.2C13.771,3.871,11.557,0,8.829,0S3.886,3.886,3.886,8.671a12.65,12.65,0,0,0,1.457,6.157A1.546,1.546,0,0,1,5.1,16.671Z" transform="translate(12.943 11.243)" fill="#fff"/>
+  <g id="Group" transform="translate(15.629 23.129)">
+    <path id="Path-3" data-name="Path" d="M9.157,0A11.225,11.225,0,0,1,8.6,1.814H.557A11.225,11.225,0,0,1,0,0Z" transform="translate(1.557 0)" fill="#ffd05b"/>
+    <path id="Path-4" data-name="Path" d="M12.171,1.814H0A14.5,14.5,0,0,1,1.086,0h10A15.617,15.617,0,0,1,12.171,1.814Z" transform="translate(0 6.314)" fill="#ffd05b"/>
+  </g>
+  <circle id="Oval" cx="17.229" cy="17.229" r="17.229" transform="translate(24.586 26.3)" fill="#ff7058"/>
+  <g id="Group-2" data-name="Group" transform="translate(36.329 31.014)">
+    <circle id="Oval-2" data-name="Oval" cx="1.771" cy="1.771" r="1.771" transform="translate(4.314 0)" fill="#e6e9ee"/>
+    <circle id="Oval-3" data-name="Oval" cx="1.771" cy="1.771" r="1.771" transform="translate(4.871 5.486)" fill="#e6e9ee"/>
+    <circle id="Oval-4" data-name="Oval" cx="1.771" cy="1.771" r="1.771" transform="translate(0 3.057)" fill="#e6e9ee"/>
+  </g>
+</svg>

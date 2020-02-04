@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    @include respond(tab-land) {
+        //width < 1200
+        font-size: 56.25%; 
+    }
+
+    @include respond(tab-port) {
+        //width < 900
+        font-size: 50%; 
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; 
+    }
+}
+
+body {
+    font-weight: 300;
+    line-height: 1.6;
+
+    display: grid;
+    grid-template-rows: min-content 100vh min-content min-content min-content min-content min-content repeat(1, 100vh);
+    grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 20rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [ right-space-end];
+}

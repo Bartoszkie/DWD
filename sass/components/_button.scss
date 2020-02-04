@@ -1,0 +1,26 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        
+        font-size: $primary-font-size-norm;
+     
+        border-radius: 5rem;
+        padding: 1.2rem 3rem;
+    }
+
+    &__header {
+        color: $primary-color-white;
+        background-color: $primary-color-green;
+    }
+
+    &__section {
+        color: $primary-color-blue;
+        background-color: $primary-color-white;
+    }
+
+    &--medium {}
+
+    &--small {}
+}

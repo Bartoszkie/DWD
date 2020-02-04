@@ -1,0 +1,55 @@
+.header {
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+
+    font-size: $primary-font-size-norm;
+
+    padding: 2rem;
+
+    @include respond(tab-land) {
+        grid-column: left-space-start / right-space-end;
+    }
+
+    &__logo {
+        display: flex;
+        margin-right: auto;
+
+        &--img {
+            height: 5.6rem;
+            margin-right: 2rem;
+        }
+    }
+
+    &__title {
+        color: $primary-color-blue;
+        align-self: flex-end;
+    }
+
+    &__menu {
+        margin-left: auto;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+
+        &__item {
+            margin: 0 5rem;
+
+            @include respond(tab-land-bg) {
+                margin: 0 3rem;
+            }
+
+            @include respond(tab-land-md) {
+                margin: 0 2.5rem;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $primary-color-blue;
+        }
+    }
+}

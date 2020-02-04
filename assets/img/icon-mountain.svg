@@ -1,0 +1,11 @@
+<svg id="mountain" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <circle id="Oval" cx="36" cy="36" r="36" fill="#324a5e"/>
+  <g id="Group" transform="translate(28.6 13.9)">
+    <circle id="Oval-2" data-name="Oval" cx="3.857" cy="3.857" r="3.857" transform="translate(0 0)" fill="#ffd05b"/>
+  </g>
+  <path id="Path" d="M0,33.514,11.6,8.829,22.486,33.514,33.143,0,46.086,33.514" transform="translate(12.957 17.757)" fill="#59bf91"/>
+  <g id="Group-2" data-name="Group" transform="translate(18.943 17.757)">
+    <path id="Path-2" data-name="Path" d="M3.871,0,0,12.171l2.414-2.1,1.743,3.114L5.771,9.943,8.4,11.714Z" transform="translate(23.286 0)" fill="#fff"/>
+    <path id="Path-3" data-name="Path" d="M5.614,0,0,11.943,3.057,9.786l2.357,3.486L7.8,9.643l2.9,1.9Z" transform="translate(0 8.829)" fill="#fff"/>
+  </g>
+</svg>
