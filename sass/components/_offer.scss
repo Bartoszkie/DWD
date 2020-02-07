@@ -7,6 +7,18 @@
         transform: translateX(-5rem);
     }
 
+    @include respond(phone) {
+        transform: translateX(0rem);
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    &>h2 {
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
     &>p {
         margin-top: 5.5rem;
     }
@@ -28,12 +40,6 @@
     grid-row: 2 / -1;
 
     margin-top: 10rem;
-
-    @include respond(tab-port) {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-
     padding: 5rem;
 
     background-color: $primary-color-green;
@@ -42,6 +48,14 @@
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(3, 1fr);
+
+    @include respond(phone) {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: 1fr;
+    }
 
     &>h4 {
         grid-column: 1 / -1;
@@ -59,6 +73,11 @@
 
         &:not(:last-child) {
             border-right: .1rem solid $primary-color-white;
+
+            @include respond(phone) {
+                border-right: none;
+                border-bottom: .1rem solid $primary-color-white;
+            }
         }
     }
 }
@@ -69,4 +88,9 @@
 
     align-self: end;
     justify-self: center;
+
+    @include respond(phone) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
 }

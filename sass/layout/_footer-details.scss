@@ -4,6 +4,10 @@
     grid-template-rows: min-content repeat(2, 1fr);
     grid-gap: 5rem;
 
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
     &__box {
         & > p {
             margin: .5rem 0;

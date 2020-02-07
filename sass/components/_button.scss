@@ -20,6 +20,13 @@
         background-color: $primary-color-white;
     }
 
+    &__mobile {
+        background-color: $primary-color-green;
+        color: $primary-color-white;
+        width: 80%;
+        text-align: center;
+    }
+
     &--medium {}
 
     &--small {}

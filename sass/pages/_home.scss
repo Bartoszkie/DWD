@@ -19,6 +19,31 @@
 
         filter: brightness(0.70);
     }
+
+    @include respond(phone) {
+        &__box {
+
+            &>h4,
+            a {
+                display: none;
+            }
+        }
+    }
+
+    &--mobile {
+        display: none;
+
+        @include respond(phone) {
+            margin-top: 5rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            grid-column: left-space-start / right-space-end;
+            grid-row: 3 / 4;
+        }
+    }
 }
 
 .section-about-us {
@@ -34,6 +59,11 @@
     .paragraph--box {
         text-align: center;
         min-width: 60rem;
+    }
+
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 4 / 5;
     }
 }
 
@@ -51,7 +81,17 @@
         grid-column: left-space-start / right-space-end;
     }
 
-    & > img {
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 5 / 6;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        justify-items: center;
+        justify-content: center;
+    }
+
+    &>img {
         @include respond(tab-port) {
             width: 60%;
         }
@@ -64,6 +104,11 @@
     grid-column: center-start / center-end;
     grid-row: 5 / 6;
 
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 6 / 7;
+    }
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, min-content);
@@ -74,6 +119,11 @@
 
     grid-column: center-start / center-end;
     grid-row: 6 / 7;
+
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 7 / 8;
+    }
 }
 
 .section-atractions {
@@ -82,7 +132,12 @@
     grid-column: center-start / center-end;
     grid-row: 7 / 8;
 
-    & > h4 {
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 8 / 9;
+    }
+
+    &>h4 {
         margin-top: 8rem;
     }
 }
@@ -103,5 +158,10 @@
 
     @include respond(tab-port) {
         flex-direction: column;
+    }
+
+    @include respond(phone) {
+        grid-column: left-space-start / right-space-end;
+        grid-row: 9 / 10;
     }
 }
