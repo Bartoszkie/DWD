@@ -31,6 +31,6 @@ body {
     line-height: 1.6;
 
     display: grid;
-    grid-template-rows: min-content 100vh min-content min-content min-content min-content min-content repeat(1, 100vh);
+    grid-template-rows: min-content 100vh min-content min-content min-content min-content min-content min-content;
     grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 20rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [ right-space-end];
 }

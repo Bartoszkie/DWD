@@ -1,14 +1,19 @@
 .offer {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    transform: translateX(-2rem);
+    transform: translateX(2rem);
 
-    & > p {
+    @include respond(tab-port) {
+        transform: translateX(-5rem);
+    }
+
+    &>p {
         margin-top: 5.5rem;
     }
 
     &__list {
         transform: translateX(2rem);
+
         &__item {
             font-weight: 700;
             color: $primary-color-blue;
@@ -23,6 +28,12 @@
     grid-row: 2 / -1;
 
     margin-top: 10rem;
+
+    @include respond(tab-port) {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
     padding: 5rem;
 
     background-color: $primary-color-green;
@@ -32,7 +43,7 @@
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(3, 1fr);
 
-    & > h4 {
+    &>h4 {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
         align-self: center;
@@ -41,6 +52,10 @@
 
     &__item {
         padding: 5rem;
+
+        @include respond(tab-port) {
+            padding: 3rem;
+        }
 
         &:not(:last-child) {
             border-right: .1rem solid $primary-color-white;

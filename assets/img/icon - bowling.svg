@@ -1,0 +1,16 @@
+<svg id="icon_bowling" data-name="icon / bowling" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g id="bowling">
+    <path id="Path" d="M88,44A43.983,43.983,0,0,1,47.178,87.878C46.13,87.948,45.065,88,44,88s-2.13-.035-3.178-.122A44,44,0,1,1,88,44Z" fill="#324a5e"/>
+    <path id="Path-2" data-name="Path" d="M6.233,20.376C2.549,23.816,0,31.359,0,40.106c0,6.2,1.275,16.4,3.335,20.341H18.106c2.043-3.963,3.335-14.16,3.335-20.341,0-8.7-2.514-16.186-6.146-19.66a1.943,1.943,0,0,1-.279-2.27A15.38,15.38,0,0,0,16.832,10.6C16.832,4.732,14.125,0,10.79,0S4.749,4.749,4.749,10.6A15.461,15.461,0,0,0,6.53,18.124,1.89,1.89,0,0,1,6.233,20.376Z" transform="translate(15.819 13.741)" fill="#fff"/>
+    <g id="Group" transform="translate(19.032 28.111)">
+      <path id="Path-3" data-name="Path" d="M11.192,0a13.72,13.72,0,0,1-.681,2.217H.681A13.72,13.72,0,0,1,0,0Z" transform="translate(1.973 0.157)" fill="#ffd05b"/>
+      <path id="Path-4" data-name="Path" d="M14.876,2.217H0A17.723,17.723,0,0,1,1.327,0H13.549A19.087,19.087,0,0,1,14.876,2.217Z" transform="translate(0.07 7.875)" fill="#ffd05b"/>
+    </g>
+    <circle id="Oval" cx="21.057" cy="21.057" r="21.057" transform="translate(30.049 32.144)" fill="#ff7058"/>
+    <g id="Group-2" data-name="Group" transform="translate(44.349 37.889)">
+      <circle id="Oval-2" data-name="Oval" cx="2.165" cy="2.165" r="2.165" transform="translate(5.325 0.017)" fill="#e6e9ee"/>
+      <circle id="Oval-3" data-name="Oval" cx="2.165" cy="2.165" r="2.165" transform="translate(6.006 6.722)" fill="#e6e9ee"/>
+      <circle id="Oval-4" data-name="Oval" cx="2.165" cy="2.165" r="2.165" transform="translate(0.052 3.754)" fill="#e6e9ee"/>
+    </g>
+  </g>
+</svg>

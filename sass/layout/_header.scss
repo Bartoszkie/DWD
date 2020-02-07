@@ -1,5 +1,5 @@
 .header {
-    grid-column: center-start / center-end;
+    grid-column: left-space-start / right-space-end;
     grid-row: 1 / 2;
     display: flex;
     align-items: center;
@@ -7,10 +7,6 @@
     font-size: $primary-font-size-norm;
 
     padding: 2rem;
-
-    @include respond(tab-land) {
-        grid-column: left-space-start / right-space-end;
-    }
 
     &__logo {
         display: flex;
@@ -29,6 +25,10 @@
 
     &__menu {
         margin-left: auto;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__list {
@@ -36,15 +36,18 @@
         display: flex;
 
         &__item {
-            margin: 0 5rem;
+            &:not(:last-child) {
+                margin: 0 5rem;
 
-            @include respond(tab-land-bg) {
-                margin: 0 3rem;
+                @include respond(tab-land-bg) {
+                    margin: 0 3rem;
+                }
+
+                @include respond(tab-land-md) {
+                    margin: 0 2.5rem;
+                }
             }
 
-            @include respond(tab-land-md) {
-                margin: 0 2.5rem;
-            }
         }
 
         &__link {

@@ -1,0 +1,13 @@
+<svg id="icon_mountain" data-name="icon / mountain" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g id="mountain">
+    <circle id="Oval" cx="44" cy="44" r="44" fill="#324a5e"/>
+    <g id="Group" transform="translate(34.778 16.794)">
+      <circle id="Oval-2" data-name="Oval" cx="4.714" cy="4.714" r="4.714" transform="translate(0.178 0.195)" fill="#ffd05b"/>
+    </g>
+    <path id="Path" d="M0,40.962,14.178,10.79l13.3,30.171L40.508,0,56.327,40.962" transform="translate(15.837 21.703)" fill="#59bf91"/>
+    <g id="Group-2" data-name="Group" transform="translate(23.048 21.651)">
+      <path id="Path-2" data-name="Path" d="M4.732,0,0,14.876,2.951,12.31l2.13,3.806,1.973-3.963,3.213,2.165Z" transform="translate(28.565 0.052)" fill="#fff"/>
+      <path id="Path-3" data-name="Path" d="M6.862,0,0,14.6,3.737,11.96l2.881,4.26,2.916-4.435,3.544,2.322Z" transform="translate(0.105 10.843)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+.hamburger {
+    width: 4rem;
+    height: 4rem;
+    padding: .5rem;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    @include respond(tab-port) {
+        display: flex;
+    }
+
+    &__dash {
+        display: inline-block;
+        width: 3rem;
+        height: .3rem;
+        background-color: $primary-color-blue;
+        transition: all 0.3s linear;
+        transform-origin: -.4rem;
+        margin: .3rem 0;
+
+        &:last-child {
+            width: 2.5rem;
+            align-self: flex-start;
+        }
+    }
+}
