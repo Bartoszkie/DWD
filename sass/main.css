@@ -776,6 +776,8 @@ body section:not(:first-child), body section:not(:last-child) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 10;
   font-size: 1.6rem;
   padding: 2rem;
 }
@@ -800,11 +802,21 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .header__menu {
   margin-left: auto;
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
 }
 
 @media only screen and (max-width: 56.25em) {
   .header__menu {
-    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    z-index: -1;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    padding-bottom: 2rem;
+    background-color: #FFFFFF;
   }
 }
 
@@ -828,6 +840,27 @@ body section:not(:first-child), body section:not(:last-child) {
 @media only screen and (max-width: 87.5em) {
   .header__list__item:not(:last-child) {
     margin: 0 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header__list__item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
