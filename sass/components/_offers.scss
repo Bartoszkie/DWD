@@ -5,13 +5,20 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 
+    & > p {
+        cursor: pointer;
+    }
+
     &>p:first-child {
         margin-right: 13rem;
+
+        @include respond(phone) {
+            margin-right: 7.5rem;
+        }
     }
 }
 
 .offers-details {
-    // box-shadow: .1rem .4rem .8rem rgba(0, 0, 0, .1);
     grid-column: 1 / -1;
     grid-row: 2 / 3;
 

@@ -163,5 +163,7 @@
     @include respond(phone) {
         grid-column: left-space-start / right-space-end;
         grid-row: 9 / 10;
+
+        padding: 0 5rem;
     }
 }

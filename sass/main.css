@@ -465,8 +465,18 @@ body section:not(:first-child), body section:not(:last-child) {
   grid-row: 1 / 2;
 }
 
+.offers-headings > p {
+  cursor: pointer;
+}
+
 .offers-headings > p:first-child {
   margin-right: 13rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .offers-headings > p:first-child {
+    margin-right: 7.5rem;
+  }
 }
 
 .offers-details {
@@ -1085,6 +1095,7 @@ body section:not(:first-child), body section:not(:last-child) {
     -ms-grid-row: 9;
     -ms-grid-row-span: 1;
     grid-row: 9 / 10;
+    padding: 0 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
