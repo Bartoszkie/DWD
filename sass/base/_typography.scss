@@ -57,6 +57,10 @@
         font-size: $primary-font-size-sm;
     }
 
+    &--link {
+        text-decoration: none;
+    }
+
     &--white {
         color: $primary-color-white !important;
     }

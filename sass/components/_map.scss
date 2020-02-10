@@ -14,18 +14,29 @@
     }
 
     &__map {
-        background-color: #fff;
-        width: 48rem;
-        height: 36rem;
+        margin-top: 5rem;
+
+        &>iframe {
+            border-radius: 1rem;
+        }
 
         @include respond(tab-port) {
             margin-top: 5rem;
-            width: 60rem;
-            align-self: center;
-        }
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
 
-        @include respond(phone) {
-            width: 100%;
+            iframe,
+            object,
+            embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

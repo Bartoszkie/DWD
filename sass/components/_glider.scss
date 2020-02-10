@@ -1,0 +1,69 @@
+.glider {
+    position: relative;
+
+    figure {
+        display: block;
+        & > img {
+            border-radius: 1rem;
+        }
+        
+        blockquote {}
+    }
+
+    &-contain {
+        width: 100% !important;
+    }
+
+    &-prev {
+        border-radius: 50%;
+        background-color: grey;
+        color: $primary-color-white !important;
+        width: 5rem;
+        height: 5rem;
+
+    }
+
+    &-next {
+        border-radius: 50%;
+        padding: 0.5rem;
+        background-color: grey;
+        color: $primary-color-white !important;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &-controls {
+        &>button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: $primary-color-white;
+            background-color: rgba(0, 0, 0, .7);
+            width: 4rem;
+            height: 4rem;
+            font-size: 2.3rem;
+            border-radius: 50%;
+        }
+
+        position: absolute !important;
+        right: 5rem !important;
+        bottom: 6rem !important;
+
+        .resize {
+           position: relative;
+           right: 8rem;
+           bottom: -1.2rem;
+        }
+    }
+}
+
+.fullScreen {
+    &>img {
+        position: relative;
+        width: 100% !important;
+        height: auto !important;
+        z-index: 2000;
+        transform: scale(1.5);
+        transition: all .2s ease-in-out;
+    }
+}

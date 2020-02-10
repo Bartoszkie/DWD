@@ -124,13 +124,17 @@
 }
 
 .section-gallery {
-    margin-top: 9.4rem;
+    margin: 9.4rem 10.4rem 0;
 
-    grid-column: center-start / center-end;
+    grid-column: left-space-start / right-space-end;
     grid-row: 6 / 7;
+    position: relative;
+
+    @include respond(tab-port-lg) {
+        margin: 0;
+    }
 
     @include respond(phone) {
-        grid-column: left-space-start / right-space-end;
         grid-row: 7 / 8;
     }
 }

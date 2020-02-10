@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="https://kit.fontawesome.com/eb93c6efb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/glider.min.css">
     <title>Web</title>
     <link rel="stylesheet" href="./sass/main.css">
 </head>
@@ -37,7 +38,8 @@
                     <a class="header__list__link" href="#footer">Kontakt</a>
                 </li>
                 <li class="header__list__item">
-                    <a class="btn btn__header" href="#see-more">Zobacz Więcej</a>
+                    <a class="btn btn__header"
+                        href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz Film</a>
                 </li>
             </ul>
         </nav>
@@ -54,7 +56,8 @@
             <h1 class="heading heading-h1">Dom Wczasów Dziecięcych</h1>
             <h4 class="heading heading-h4 m-t-s">Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest jedynym
                 w Górach Izerskich miejscem specjalizującym się w organizacji wypoczynku dzieci i młodzieży </h4>
-            <a class="btn btn__section m-t-m" href="#">Zobacz Więcej</a>
+            <a class="btn btn__section m-t-m"
+                href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz Film</a>
         </div>
     </section>
 
@@ -296,14 +299,45 @@
 
     <section class="section-gallery">
         <h5 class="heading heading-blue heading-h5 center-text">Galeria</h5>
-        <div class="glide">
-            <div data-glide-el="track" class="glide__track">
-                <ul class="glide__slides">
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                </ul>
+        <div class="glider-contain multiple">
+            <!-- <button class="glider-prev"><</button> -->
+            <div class="glider">
+                <figure>
+                    <img src="./assets/img/start-secton-bg.jpg" alt="test">
+                </figure>
+                <figure>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
+                    </blockquote>
+                </figure>
+                <figure>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
+                    </blockquote>
+                </figure>
+                <figure>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
+                    </blockquote>
+                </figure>
+                <figure>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
+                    </blockquote>
+                </figure>
             </div>
+            <div class="glider-controls">
+                <button class="resize" id="resize">
+                    <i class="fas fa-expand-alt"></i>
+                </button>
+                <button class="glider-prev">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="glider-next">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+            <div class="glider-dots" id="dots"></div>
         </div>
     </section>
 
@@ -326,25 +360,28 @@
         <div class="atractions">
             <ul class="atractions-list">
                 <li class="atractions-list__item">
-                    Nadleśnictwo
+                    <a href="http://www.swieradow.wroclaw.lasy.gov.pl/" target="_blank" class="paragraph paragraph--link">Nadleśnictwo</a>
                 </li>
                 <li class="atractions-list__item">
-                    Czarci Młyn
+                    <a href="https://swieradowzdroj.pl/122-swieradowzdroj-czarci-mlyn?fbclid=IwAR1mnAquHh9Jfwjc0MK_7GefAR79xeheoc1X9OuP3JjTyI_3L461csmHXmQ" target="_blank" class="paragraph paragraph--link"> Czarci Młyn</a>
                 </li>
                 <li class="atractions-list__item">
-                    Kolej Gondolowa
+                    <a href="https://skisun.pl/" target="_blank" class="paragraph paragraph--link"> Kolej Gondolowa</a>
                 </li>
                 <li class="atractions-list__item">
-                    Aquapark
+                    <a href="https://www.interferie.pl/malachit/sport?fbclid=IwAR3m9lcwc9MrjAwdcJbfEb7clZt_dlU0h-RqAulrJ6cg69xANgJCIZfFHkU" target="_blank" class="paragraph paragraph--link"> Aquapark</a>
                 </li>
                 <li class="atractions-list__item">
-                    Centrum Edukacji Ekologicznej „Izerska Łąka”
+                    <a href="https://swieradowzdroj.pl/2463-swieradowzdroj-izerska-laka?fbclid=IwAR3VNQHvcffNnqgTXentl4zqRMVQ2XXUX3dff9iUJbR3cuhZdqcJI7S9rVo" target="_blank" class="paragraph paragraph--link"> Centrum Edukacji Ekologicznej „Izerska Łąka”</a>
                 </li>
                 <li class="atractions-list__item">
-                    Pracownia Piernikowa Isabell
+                    <a href="https://swieradowzdroj.pl/2971-swieradowzdroj-pracownia-piernikowa-isabell-izabela-janiak?fbclid=IwAR3-oTUW0X_RVv5Ths0oRH15s3CLDn7bdDpNXvPUQtPVpZrp9MBFV6yC3vI" target="_blank" class="paragraph paragraph--link"> Pracownia Piernikowa Isabell</a>
                 </li>
                 <li class="atractions-list__item">
-                    Stacja Kultury
+                    <a href="https://swieradowzdroj.pl/4895-swieradowzdroj-miejskie-centrum-kultury-aktywnosci-i-promocji-gminy-stacja-kultury?fbclid=IwAR2G_dJy3xEr74HUGKeInjQEqbvgxpBTIB4ptoVAn0Q17U5mJ5W0W7BrNVw" target="_blank" class="paragraph paragraph--link"> Stacja Kultury</a>
+                </li>
+                <li class="atractions-list__item">
+                    <a href="https://www.facebook.com/pages/category/Local-Business/We%C5%82niana-Przysta%C5%84-bac%C3%B3wka-Izerska-242130706190762/" target="_blank" class="paragraph paragraph--link">Wełniana Przystań</a>
                 </li>
             </ul>
             <img src="./assets/img/Travelers.svg" alt="lady with map">
@@ -405,13 +442,17 @@
         </div>
         <div class="map-container">
             <div class="map-container__map">
-                MAP
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.8254774682355!2d15.339397752029484!3d50.908445279440734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ed390bf392815%3A0xef475b965439d2f0!2sDom%20Wczas%C3%B3w%20Dzieci%C4%99cych!5e0!3m2!1spl!2spl!4v1581344052659!5m2!1spl!2spl"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
         </div>
     </footer>
 
-    <script src="./dist/bundle.js"></script>
+    <script src="./dist/global_script.bundle.js"></script>
+    <script src="./scripts/glider.min.js"></script>
+    <script src="./scripts/carousel.js"></script>
 </body>
 
 </html>
