@@ -509,10 +509,9 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .offers-details {
   grid-column: 1 / -1;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-  margin-top: 13rem;
+  grid-row: 1 / 2;
   background-color: #FCFCFC;
   padding: 2rem 5rem;
 }
@@ -526,9 +525,9 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .offers-cards {
   grid-column: 1 / -1;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   margin-top: 3.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,15 +643,12 @@ body section:not(:first-child), body section:not(:last-child) {
   }
 }
 
-.offers-footer {
+.offer-details-extended {
   grid-column: 1 / -1;
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
   margin-top: 5.6rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: center;
 }
 
 .atractions {
