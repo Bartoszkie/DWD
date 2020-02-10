@@ -64,6 +64,10 @@
 
         border-radius: 2rem;
 
+        @include respond(tab-port-lg) {
+            grid-template-columns: repeat(2, 17rem);
+        }
+
         @include respond(tab-port) {
             grid-template-columns: repeat(2, 13rem);
         }

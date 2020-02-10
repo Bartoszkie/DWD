@@ -82,7 +82,11 @@ body section:not(:first-child), body section:not(:last-child) {
 }
 
 .m-t-m {
-  margin-top: 1rem;
+  margin-top: 5rem;
+}
+
+.m-b-m {
+  margin-bottom: 3rem;
 }
 
 .heading {
@@ -94,8 +98,20 @@ body section:not(:first-child), body section:not(:last-child) {
   font-size: 4.8rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading-h1 {
+    font-size: 4rem;
+  }
+}
+
 .heading-h2 {
   font-size: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-h2 {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-h3 {
@@ -309,6 +325,11 @@ body section:not(:first-child), body section:not(:last-child) {
   }
 }
 
+.cards .card__list__item {
+  color: #00577C;
+  font-size: 1.6rem;
+}
+
 @media only screen and (max-width: 37.5em) {
   .cards .card__list__item {
     margin: .7rem 0;
@@ -411,6 +432,12 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .offer-details__item {
   padding: 5rem;
+}
+
+@media only screen and (max-width: 58.5em) {
+  .offer-details__item {
+    padding: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -539,6 +566,13 @@ body section:not(:first-child), body section:not(:last-child) {
       grid-template-rows: 0.8fr -webkit-min-content;
       grid-template-rows: 0.8fr min-content;
   border-radius: 2rem;
+}
+
+@media only screen and (max-width: 58.5em) {
+  .offers-cards__card {
+    -ms-grid-columns: (17rem)[2];
+        grid-template-columns: repeat(2, 17rem);
+  }
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -687,6 +721,12 @@ body section:not(:first-child), body section:not(:last-child) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 58.5em) {
+  .map-container {
+    margin-left: 0rem;
+  }
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -924,9 +964,16 @@ body section:not(:first-child), body section:not(:last-child) {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .section-start__box {
+    width: 100%;
+  }
   .section-start__box > h4,
   .section-start__box a {
     display: none;
+  }
+  .section-start__box > h1 {
+    -webkit-transform: translateY(7rem);
+            transform: translateY(7rem);
   }
 }
 
@@ -1109,6 +1156,8 @@ body section:not(:first-child), body section:not(:last-child) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

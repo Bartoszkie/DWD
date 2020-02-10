@@ -5,6 +5,10 @@
     flex-direction: column;
     justify-content: center;
 
+    @include respond(tab-port-lg) {
+        margin-left: 0rem;
+    }
+
     @include respond(tab-port) {
         width: 100%;
     }

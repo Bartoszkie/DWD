@@ -67,6 +67,10 @@
     &__item {
         padding: 5rem;
 
+        @include respond(tab-port-lg) {
+            padding: 3.5rem;
+        }
+
         @include respond(tab-port) {
             padding: 3rem;
         }

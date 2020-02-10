@@ -85,6 +85,9 @@
         }
 
         &__list__item {
+            color: $primary-color-blue;
+            font-size: $primary-font-size-norm;
+
             @include respond(phone) {
                 margin: .7rem 0;
             }
