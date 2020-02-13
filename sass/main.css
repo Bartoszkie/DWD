@@ -41,9 +41,9 @@ body {
   -ms-grid-rows: min-content 100vh min-content min-content min-content min-content min-content min-content;
       grid-template-rows: -webkit-min-content 100vh -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
       grid-template-rows: min-content 100vh min-content min-content min-content min-content min-content min-content;
-  -ms-grid-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] (minmax(min-content, 20rem))[10] [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
-      grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(-webkit-min-content, 20rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
-      grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 20rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
+  -ms-grid-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] (minmax(min-content, 12rem))[10] [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
+      grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(-webkit-min-content, 12rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
+      grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 12rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [right-space-end];
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -814,6 +814,7 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .glider {
   position: relative;
+  max-width: 1200px;
 }
 
 .glider figure {
@@ -1178,7 +1179,7 @@ body section:not(:first-child), body section:not(:last-child) {
 
 .section-gallery {
   margin: 9.4rem 10.4rem 0;
-  grid-column: left-space-start / right-space-end;
+  grid-column: center-start / center-end;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6 / 7;

@@ -33,7 +33,7 @@ body {
 
     display: grid;
     grid-template-rows: min-content 100vh min-content min-content min-content min-content min-content min-content;
-    grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 20rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [ right-space-end];
+    grid-template-columns: [left-space-start] minmax(10.4rem, 1fr) [left-space-end center-start] repeat(10, minmax(min-content, 12rem)) [center-end right-space-start] minmax(10.4rem, 1fr) [ right-space-end];
 
     @include respond(phone) {
         grid-template-rows: min-content 50vh min-content min-content min-content min-content min-content min-content min-content;
