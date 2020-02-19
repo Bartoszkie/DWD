@@ -30,6 +30,10 @@
     &__list {
         transform: translateX(2rem);
 
+        @include respond(phone) {
+            transform: translateX(1rem);
+        }
+
         &__item {
             font-weight: 700;
             color: $primary-color-blue;
