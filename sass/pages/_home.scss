@@ -153,17 +153,24 @@
 
 .section-gallery {
     margin: 9.4rem 10.4rem 0;
-
-    grid-column: center-start / center-end;
+    
+    grid-column: left-space-start / right-space-end;
     grid-row: 6 / 7;
     position: relative;
 
     @include respond(tab-port-lg) {
-        margin: 0;
+        margin: 9.4rem 0 0;
     }
 
     @include respond(phone) {
         grid-row: 7 / 8;
+    }
+
+    & > h5 {
+        @include respond(phone) {
+            font-size: $primary-font-size-norm;
+            margin-bottom: 1.6rem;
+        }
     }
 }
 

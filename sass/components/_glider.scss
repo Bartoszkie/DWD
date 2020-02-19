@@ -33,6 +33,12 @@
         height: 5rem;
     }
 
+    &-prev, &-next {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
     &-controls {
         &>button {
             background-color: transparent;

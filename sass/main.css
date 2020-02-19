@@ -1157,6 +1157,12 @@ body {
   height: 5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .glider-prev, .glider-next {
+    display: none;
+  }
+}
+
 .glider-controls {
   position: absolute !important;
   right: 5rem !important;
@@ -1532,7 +1538,7 @@ body {
 
 .section-gallery {
   margin: 9.4rem 10.4rem 0;
-  grid-column: center-start / center-end;
+  grid-column: left-space-start / right-space-end;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6 / 7;
@@ -1541,7 +1547,7 @@ body {
 
 @media only screen and (max-width: 58.5em) {
   .section-gallery {
-    margin: 0;
+    margin: 9.4rem 0 0;
   }
 }
 
@@ -1550,6 +1556,13 @@ body {
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-gallery > h5 {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
   }
 }
 
