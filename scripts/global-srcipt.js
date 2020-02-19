@@ -8,7 +8,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
     mobileNavbar.style.opacity = "0";
   } else {
     opened = true;
-    mobileNavbar.style.transform = "translateY(29%)";
+    mobileNavbar.style.transform = "translateY(24%)";
     mobileNavbar.style.opacity = "1";
   }
 });
@@ -22,7 +22,7 @@ window.addEventListener("resize", () => {
   console.log(opened);
   if (vw >= 900) {
     opened = true;
-    mobileNavbar.style.transform = "translateY(29%)";
+    mobileNavbar.style.transform = "translateY(24%)";
     mobileNavbar.style.opacity = "1";
   }
 });

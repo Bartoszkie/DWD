@@ -8,7 +8,7 @@
 
     font-size: $primary-font-size-norm;
 
-    padding: 2rem;
+    padding: 1.4rem 2.4rem;
 
     &__logo {
         display: flex;
@@ -23,6 +23,12 @@
     &__title {
         color: $primary-color-blue;
         align-self: flex-end;
+
+        font-size: $section-headings-sm;
+    
+        @include respond(tab-port) {
+            font-size: $primary-font-size-norm;
+        }
     }
 
     &__menu {
@@ -37,6 +43,7 @@
             z-index: -1;
             transform: translateY(-150%);
             padding-bottom: 2rem;
+            padding-top: 2rem;
             background-color: $primary-color-white;
         }
     }
@@ -47,7 +54,7 @@
 
         &__item {
             &:not(:last-child) {
-                margin: 0 5rem;
+                margin: 0 4.7rem;
 
                 @include respond(tab-land-bg) {
                     margin: 0 3rem;
@@ -73,6 +80,8 @@
         &__link {
             text-decoration: none;
             color: $primary-color-blue;
+            font-size: $primary-font-size-norm;
+            font-weight: $regular-font-weight;
         }
     }
 }

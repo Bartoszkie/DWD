@@ -20,9 +20,20 @@
         filter: brightness(0.70);
     }
 
+    &__box {
+        & > h4 {
+            margin: 3.8rem 0 4.9rem; 
+            max-width: 72.7rem;
+        }
+        
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
     @include respond(phone) {
         &__box {
-            width: 100%;
+           width: 100%;
         }
 
         &__box {
@@ -64,6 +75,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__paragraph {
+        width: 100%;
+        max-width: 77.2rem;
+
+        // @include respond(tab-port) {
+        //     grid-column: left-space-start / right-space-end;
+        // }
+
+        @include respond(tab-port) {
+            max-width: 63.12rem;
+        }
+    }
 
     .paragraph--box {
         text-align: center;
@@ -113,6 +137,10 @@
     grid-column: center-start / center-end;
     grid-row: 5 / 6;
 
+    @include respond(tab-port) {
+        grid-column: left-space-start / right-space-end;
+    }
+
     @include respond(phone) {
         grid-column: left-space-start / right-space-end;
         grid-row: 6 / 7;
@@ -140,6 +168,9 @@
 }
 
 .section-atractions {
+    display: flex;
+    flex-direction: column;
+
     margin-top: 10rem;
 
     grid-column: center-start / center-end;
@@ -148,10 +179,25 @@
     @include respond(phone) {
         grid-column: left-space-start / right-space-end;
         grid-row: 8 / 9;
+
+        align-items: center;
+    }
+
+    & > p {
+        align-self: center;
+        margin-top: 4.6rem;
+        width: 100%;
+        max-width: 79.5rem;
     }
 
     &>h4 {
         margin-top: 8rem;
+        margin-left: 6rem;
+
+        @include respond(phone) {
+            margin-left: 0rem; 
+            text-align: center;
+        }
     }
 }
 
@@ -179,5 +225,6 @@
         grid-row: 9 / 10;
 
         padding: 0 5rem;
+        margin-top: 3.7rem;
     }
 }

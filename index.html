@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb93c6efb6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./css/glider.min.css">
     <title>Web</title>
@@ -32,14 +32,11 @@
                     <a class="header__list__link" href="#attractions">Atrakcje</a>
                 </li>
                 <li class="header__list__item">
-                    <a class="header__list__link" href="#footer">Lokalizacja</a>
-                </li>
-                <li class="header__list__item">
                     <a class="header__list__link" href="#footer">Kontakt</a>
                 </li>
                 <li class="header__list__item">
                     <a class="btn btn__header"
-                        href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz Film</a>
+                        href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz Więcej</a>
                 </li>
             </ul>
         </nav>
@@ -54,22 +51,25 @@
     <section class="section-start">
         <div class="section-start__box center-box center-text">
             <h1 class="heading heading-h1">Dom Wczasów Dziecięcych</h1>
-            <h4 class="heading heading-h4 m-t-s">Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest jedynym
-                w Górach Izerskich miejscem specjalizującym się w organizacji wypoczynku dzieci i młodzieży </h4>
-            <a class="btn btn__section m-t-m"
-                href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz Film</a>
+            <h4 class="heading heading-h4 m-t-s">
+                Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest jedynym w Górach Izerskich miejscem specjalizującym
+                się w organizacji wypoczynku dzieci i młodzieży
+            </h4>
+            <a class="btn btn__section" href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz
+                Film</a>
         </div>
     </section>
 
     <section class="section-start--mobile">
-        <p class="paragraph weight--medium m-t-s center-text">Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest jedynym
+        <p class="paragraph weight--semibold m-t-s center-text">Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest
+            jedynym
             w Górach Izerskich miejscem specjalizującym się w organizacji wypoczynku dzieci i młodzieży </p>
         <a class="btn btn__mobile m-t-m" href="#">Zobacz Więcej</a>
     </section>
 
     <section class="section-about-us" id="about-us">
         <h2 class="heading heading-h2 heading-blue m-b-m">O nas</h2>
-        <p class="paragraph center-text paragraph">
+        <p class="paragraph center-text section-about-us__paragraph">
             Proponujemy atrakcyjny program wypoczynku w całości realizowany przez wykwalifikowaną kadrę pedagogiczną.
             Nasi nauczyciele oraz pielęgniarki zapewniają całodobową opiekę.
             <br>
@@ -110,6 +110,9 @@
                         sala fitness
                     </li>
                     <li class="card__list__item">
+                        kręgielnia
+                    </li>
+                    <li class="card__list__item">
                         tenis stołowy i piłkarzyki
                     </li>
                 </ul>
@@ -128,7 +131,6 @@
                         możliwość korzystania
                         z kompleksu boisk,
                         sali gimnastycznej
-                        oraz placu zabaw
                     </li>
                     <li class="card__list__item">
                         plac zabaw
@@ -164,7 +166,7 @@
 
         <div class="offer-details">
             <h4 class="heading-h4 center-text heading-white center-text">
-                <b>Podstawowy pakiet usług obejmuje:</b>
+                Podstawowy pakiet usług obejmuje:
             </h4>
 
             <div class="offer-details__item">
@@ -187,62 +189,67 @@
     </section>
 
     <section class="section-offer-types" id="offers">
-        <div class="offers-details">
-            <h3 class="heading-h3 heading-blue">Oferta Podstawowa: </h3>
-            <ul class="offers-details__list">
-                <li class="offers-details__list__item">
-                    Wycieczki piesze po Górach Izerskich
-                    (Zajęcznik ze ścieżką edukacyjną, stara skocznia narciarska, ścieżka edukacyjna “Przygoda w górach”)
-                </li>
-                <li class="offers-details__list__item">
-                    Wycieczka autokarowa do Szklarskiej Poręby
-                    (wodospad Szklarki, Muzeum Ziemi, Zakręt Śmierci)
-                </li>
-                <li class="offers-details__list__item">
-                    Zajęcia w Ogrodzie Trzech Żywiołów
-                </li>
-                <li class="offers-details__list__item">
-                    Konkursy, zabawy, dyskoteki, karaoke, PlayStation Move, Pokój Tajemnic
-                </li>
-                <li class="offers-details__list__item">
-                    Zajęcia sportowe na boiskach, placu zabaw, kręgle
-                </li>
-                <li class="offers-details__list__item">
-                    Zajęcia taneczne, zajęcia z arteterapii
-                </li>
-                <li class="offers-details__list__item">
-                    Ognisko
-                </li>
-            </ul>
-            <p class="paragraph weight--medium center-text">
-                Wychodząc naprzeciw Państwa oczekiwaniom możemy dostosować program do potrzeb grupy. Proponujemy
-                następujące profile pobytu:
-            </p>
-        </div>
+        <div class="offers-details-primary">
+            <div class="offers-details">
+                <h3 class="heading-h3 heading-blue">Oferta Podstawowa: </h3>
+                <ul class="offers-details__list">
+                    <li class="offers-details__list__item">
+                        Wycieczki piesze po Górach Izerskich(Zajęcznik ze ścieżką edukacyjną, stara skocznia
+                        narciarska, ścieżka edukacyjna “Przygoda w górach”)
+                    </li>
+                    <li class="offers-details__list__item">
+                        Wycieczka autokarowa do Szklarskiej Poręby(wodospad Szklarki, Muzeum Ziemi, Zakręt Śmierci)
+                    </li>
+                    <li class="offers-details__list__item">
+                        Zajęcia w Ogrodzie Trzech Żywiołów
+                    </li>
+                    <li class="offers-details__list__item">
+                        Konkursy, zabawy, dyskoteki, karaoke, PlayStation Move, Pokój Tajemnic
+                    </li>
+                    <li class="offers-details__list__item">
+                        Zajęcia sportowe na boiskach, placu zabaw, kręgle
+                    </li>
+                    <li class="offers-details__list__item">
+                        Zajęcia taneczne, zajęcia z arteterapii
+                    </li>
+                    <li class="offers-details__list__item">
+                        Ognisko
+                    </li>
+                </ul>
+                <p class="paragraph weight--medium center-text">
+                    Wychodząc naprzeciw Państwa oczekiwaniom możemy dostosować program do potrzeb grupy. Proponujemy
+                    następujące profile pobytu:
+                </p>
 
-        <div class="offers-cards">
-            <div class="offers-cards__card">
-                <h3 class="heading-h3 heading-white">
-                    Profil turystyczny
-                </h3>
-                <img src="./assets/img/Girl and sun.svg" alt="pani ze sloncem">
-                <p class="paragraph paragraph--white">
-                    pn. “Śladami Izerskich Tajemnic” - wędrówka szlakiem najatrakcyjniejszych, niejednokrotnie owianymi
-                    legendami, miejsc w Świeradowie-Zdroju; miejsca oznaczone są głazami z odpowiednimi piktogramami.
-                    Uczestnicy otrzymują “Certyfikat Odkrywcy”.
-                </p>
-            </div>
-            <div class="offers-cards__card">
-                <h3 class="heading-h3 heading-white">
-                    Profil Artystyczny
-                </h3>
-                <img src="./assets/img/icon-mountain.svg" alt="icon moutains">
-                <p class="paragraph paragraph--white">
-                    rozwijanie i poszerzanie umiejętności tanecznych, rozwój świadomości własnego ciała, integrowanie
-                    zespołu; wykorzystanie różnych środków artystycznych, które ułatwiają ekspresję emocji; zajęcia nie
-                    opierają się na zdolnościach lecz na nieskrępowanej twórczości. Uczestnicy otrzymują “Certyfikat
-                    Artysty”.
-                </p>
+                <div class="offers-cards">
+                    <div class="offers-cards__card">
+                        <h3 class="heading-h3 heading-white">
+                            Profil turystyczny
+                        </h3>
+                        <img src="./assets/img/Girl and sun.svg" alt="pani ze sloncem">
+                        <p class="paragraph paragraph--white">
+                            pn. “Śladami Izerskich Tajemnic” - wędrówka szlakiem najatrakcyjniejszych, niejednokrotnie
+                            owianymi legendami, miejsc w Świeradowie-Zdroju; miejsca oznaczone są głazami z odpowiednimi
+                            piktogramami. Uczestnicy otrzymują “Certyfikat Odkrywcy”; wędrówki z zastosowaniem QR
+                            kodów i geocatchingu.
+                        </p>
+                    </div>
+                    <div class="offers-cards__card">
+                        <div class="offers-cards__card--heading--right">
+                            <h3 class="heading-h3 heading-white">
+                                Profil artystyczny
+                            </h3>
+                            <p>z elementami tańca i arteterapii</p>
+                        </div>
+                        <img src="./assets/img/girl.svg" alt="icon moutains">
+                        <p class="paragraph paragraph--white">
+                            rozwijanie i poszerzanie umiejętności tanecznych, rozwój świadomości własnego ciała,
+                            integrowanie zespołu; wykorzystanie różnych środków artystycznych, które ułatwiają ekspresję
+                            emocji; zajęcia nie opierają się na zdolnościach lecz na nieskrępowanej twórczości.
+                            Uczestnicy otrzymują “Certyfikat Artysty”.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -296,7 +303,7 @@
 
         </div>
     </section>
-<!-- 
+    <!-- 
     <section class="section-gallery">
         <h5 class="heading heading-blue heading-h5 center-text">Galeria</h5>
         <div class="glider-contain multiple">
@@ -344,12 +351,11 @@
         <h2 class="heading-h2 heading-blue center-text">Atrakcje</h2>
         <p class="paragraph">
             Świeradów-Zdrój jest renomowanym uzdrowiskiem położonym w południowo-zachodniej części Polski w Górach
-            Izerskich. Bogactwo wód mineralnych, unikalny klimat, ukształtowanie terenu oraz wyciągi narciarskie
-            umożliwiają korzystanie z leczenia i aktywny wypoczynek. Bliskość granic czeskiej i niemieckiej zachęca do
-            odbywania wielu ciekawych wycieczek. Ośrodek znajduje się
-            w centrum Świeradowa-Zdroju. Oddalony od ruchliwych ulic, ogrodzony, z zapleczem sportowo-rekreacyjnym w
-            postaci terenów zielonych i boisk stwarza idealne warunki dla bezpiecznego spędzenia czasu.
-            (www.swieradowzdroj.pl)
+            Izerskich. Bogactwo wód mineralnych, unikalny klimat, ukształtowanie terenu, ścieżki rowerowe oraz wyciągi
+            narciarskie umożliwiają korzystanie z leczenia i aktywny wypoczynek. Bliskość granic czeskiej i niemieckiej
+            zachęca do odbywania wielu ciekawych wycieczek. Ośrodek znajduje się w centrum Świeradowa-Zdroju. Oddalony
+            od ruchliwych ulic, ogrodzony, z zapleczem sportowo-rekreacyjnym w postaci terenów zielonych i boisk stwarza
+            idealne warunki dla bezpiecznego spędzenia czasu.
         </p>
 
         <h4 class="heading-h4 heading-blue weight--bold">
@@ -359,28 +365,36 @@
         <div class="atractions">
             <ul class="atractions-list">
                 <li class="atractions-list__item">
-                    <a href="http://www.swieradow.wroclaw.lasy.gov.pl/" target="_blank" class="paragraph paragraph--link">Nadleśnictwo</a>
+                    <a href="http://www.swieradow.wroclaw.lasy.gov.pl/" target="_blank"
+                        class="paragraph--link">Nadleśnictwo</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://swieradowzdroj.pl/122-swieradowzdroj-czarci-mlyn?fbclid=IwAR1mnAquHh9Jfwjc0MK_7GefAR79xeheoc1X9OuP3JjTyI_3L461csmHXmQ" target="_blank" class="paragraph paragraph--link"> Czarci Młyn</a>
+                    <a href="https://swieradowzdroj.pl/122-swieradowzdroj-czarci-mlyn?fbclid=IwAR1mnAquHh9Jfwjc0MK_7GefAR79xeheoc1X9OuP3JjTyI_3L461csmHXmQ"
+                        target="_blank" class="paragraph--link"> Czarci Młyn</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://skisun.pl/" target="_blank" class="paragraph paragraph--link"> Kolej Gondolowa</a>
+                    <a href="https://skisun.pl/" target="_blank" class="paragraph--link"> Kolej Gondolowa</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://www.interferie.pl/malachit/sport?fbclid=IwAR3m9lcwc9MrjAwdcJbfEb7clZt_dlU0h-RqAulrJ6cg69xANgJCIZfFHkU" target="_blank" class="paragraph paragraph--link"> Aquapark</a>
+                    <a href="https://www.interferie.pl/malachit/sport?fbclid=IwAR3m9lcwc9MrjAwdcJbfEb7clZt_dlU0h-RqAulrJ6cg69xANgJCIZfFHkU"
+                        target="_blank" class="paragraph--link"> Aquapark</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://swieradowzdroj.pl/2463-swieradowzdroj-izerska-laka?fbclid=IwAR3VNQHvcffNnqgTXentl4zqRMVQ2XXUX3dff9iUJbR3cuhZdqcJI7S9rVo" target="_blank" class="paragraph paragraph--link"> Centrum Edukacji Ekologicznej „Izerska Łąka”</a>
+                    <a href="https://swieradowzdroj.pl/2463-swieradowzdroj-izerska-laka?fbclid=IwAR3VNQHvcffNnqgTXentl4zqRMVQ2XXUX3dff9iUJbR3cuhZdqcJI7S9rVo"
+                        target="_blank" class="paragraph--link"> Centrum Edukacji Ekologicznej „Izerska
+                        Łąka”</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://swieradowzdroj.pl/2971-swieradowzdroj-pracownia-piernikowa-isabell-izabela-janiak?fbclid=IwAR3-oTUW0X_RVv5Ths0oRH15s3CLDn7bdDpNXvPUQtPVpZrp9MBFV6yC3vI" target="_blank" class="paragraph paragraph--link"> Pracownia Piernikowa Isabell</a>
+                    <a href="https://swieradowzdroj.pl/2971-swieradowzdroj-pracownia-piernikowa-isabell-izabela-janiak?fbclid=IwAR3-oTUW0X_RVv5Ths0oRH15s3CLDn7bdDpNXvPUQtPVpZrp9MBFV6yC3vI"
+                        target="_blank" class="paragraph--link"> Pracownia Piernikowa Isabell</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://swieradowzdroj.pl/4895-swieradowzdroj-miejskie-centrum-kultury-aktywnosci-i-promocji-gminy-stacja-kultury?fbclid=IwAR2G_dJy3xEr74HUGKeInjQEqbvgxpBTIB4ptoVAn0Q17U5mJ5W0W7BrNVw" target="_blank" class="paragraph paragraph--link"> Stacja Kultury</a>
+                    <a href="https://swieradowzdroj.pl/4895-swieradowzdroj-miejskie-centrum-kultury-aktywnosci-i-promocji-gminy-stacja-kultury?fbclid=IwAR2G_dJy3xEr74HUGKeInjQEqbvgxpBTIB4ptoVAn0Q17U5mJ5W0W7BrNVw"
+                        target="_blank" class="paragraph--link"> Stacja Kultury</a>
                 </li>
                 <li class="atractions-list__item">
-                    <a href="https://www.facebook.com/pages/category/Local-Business/We%C5%82niana-Przysta%C5%84-bac%C3%B3wka-Izerska-242130706190762/" target="_blank" class="paragraph paragraph--link">Wełniana Przystań</a>
+                    <a href="https://www.facebook.com/pages/category/Local-Business/We%C5%82niana-Przysta%C5%84-bac%C3%B3wka-Izerska-242130706190762/"
+                        target="_blank" class="paragraph--link">Wełniana Przystań</a>
                 </li>
             </ul>
             <img src="./assets/img/Travelers.svg" alt="lady with map">
@@ -394,10 +408,10 @@
                 <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
                     Dom Wczasów Dziecięcych
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     ul. Marii Skłodowskiej-Curie 4
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     59-850 Świeradów Zdrój
                 </p>
             </div>
@@ -405,10 +419,10 @@
                 <p class="paragraph paragraph--white footer-details__box__heading">
                     tel/fax: (+48) 75 78 16 223
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     tel kom: (+48) 606 779 606
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     e-mail: dwd@wp.pl
                 </p>
             </div>
@@ -416,13 +430,13 @@
                 <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
                     Do pobrania
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     Zamówienie
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     Regulamin wypoczynku
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     Warunki uczestnictwa
                 </p>
             </div>
@@ -430,11 +444,11 @@
                 <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
                     RODO
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     Punkt kontaktowy Inspektora
                     Ochrony Danych
                 </p>
-                <p class="paragraph paragraph--white">
+                <p class="paragraph paragraph--white paragraph--small">
                     Klauzula informacyjna
                 </p>
             </div>

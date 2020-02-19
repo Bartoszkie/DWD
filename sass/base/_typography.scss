@@ -5,25 +5,42 @@
     &-h1 {
         font-size: $section-headings-hg;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             font-size: $section-headings-lg;
         }
-    }
-
-    &-h2 {
-        font-size: $section-headings-lg;
 
         @include respond(phone) {
             font-size: $section-headings-md;
         }
     }
 
+    &-h2 {
+        font-size: $section-headings-lg;
+
+        
+        @include respond(tab-port) {
+            font-size: $section-headings-md;
+        }
+
+        @include respond(phone) {
+            font-size: $section-headings-nm;
+        }
+    }
+
     &-h3 {
         font-size: $section-headings-nm;
+
+        @include respond(tab-port) {
+            font-size: $section-headings-sm;
+        }
     }
 
     &-h4 {
         font-size: $section-headings-sm;
+    
+        @include respond(tab-port) {
+            font-size: $primary-font-size-norm;
+        }
     }
 
     &-h5 {
@@ -52,6 +69,11 @@
 .paragraph {
     color: $primary-color-blue;
     font-size: $primary-font-size-norm;
+    font-weight: $regular-font-weight;
+
+    @include respond(tab-port) {
+        font-size: $primary-font-size-sm;
+    }
 
     &--small {
         font-size: $primary-font-size-sm;
@@ -59,6 +81,14 @@
 
     &--link {
         text-decoration: none;
+        font-size: $primary-font-size-norm;
+        font-weight: $semibold-font-weight;
+        color: $primary-color-blue;
+
+        @include respond(phone) {
+            font-size: $primary-font-size-sm;
+            font-weight: $semibold-font-weight;
+        }
     }
 
     &--white {
@@ -78,6 +108,10 @@
 
     &--medium {
         font-weight: 500;
+    }
+
+    &--semibold {
+        font-weight: 600;
     }
 
     &--semi {

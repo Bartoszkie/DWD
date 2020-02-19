@@ -5,7 +5,7 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 
-    & > p {
+    &>p {
         cursor: pointer;
     }
 
@@ -18,19 +18,76 @@
     }
 }
 
-.offers-details {
+.offers-details-primary {
+    padding: 6.1rem 0 8.3rem;
+
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-
     background-color: $primary-color-grey;
-    padding: 2rem 5rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 2rem rgba(0, 0, 0, .1);
+
+    @media screen and (max-width: 400px) {
+        width: 28.8rem
+    }
+}
+
+.offers-details {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(phone) {
+        align-items: center;
+    }
+
+    &>h3,
+    h4 {
+        padding: 0 10.4rem;
+
+        @include respond(phone) {
+            padding: 0;
+        }
+    }
+
+    h4 {
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
 
     &__list {
+        padding: 0 10.4rem;
+
+        @include respond(phone) {
+            padding: 0 1rem 0 4rem;
+        }
+
         &__item {
             font-size: $primary-font-size-norm;
+            font-weight: $medium-font-weight;
             color: $primary-color-blue;
-            font-weight: 300;
             margin: 2.4rem 0;
+
+            @include respond(phone) {
+                font-size: $primary-font-size-sm;
+                font-weight: $medium-font-weight;
+            }
+        }
+    }
+
+    &>p {
+        width: 100%;
+        max-width: 70.4rem;
+        align-self: center;
+        font-size: $primary-font-size-bg;
+        font-weight: $semibold-font-weight;
+
+        @include respond(phone) {
+            font-size: $primary-font-size-norm;
+            font-weight: $semibold-font-weight;
+
+            padding: 0 3rem;
+            margin-top: 3rem;
         }
     }
 }
@@ -43,7 +100,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     @include respond(phone) {
         flex-direction: column;
@@ -52,28 +109,72 @@
     }
 
     &__card {
+        max-width: 43.2rem;
+        width: 100%;
+
         background-color: $primary-color-green;
-        padding: 5rem;
+        padding: 5.9rem 5.4rem;
         height: 50rem;
 
         display: grid;
-        grid-template-columns: repeat(2, 20rem);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.8fr min-content;
-
+        justify-content: center;
+        align-content: center;
         border-radius: 2rem;
 
-        @include respond(tab-port-lg) {
-            grid-template-columns: repeat(2, 17rem);
+        @include respond(phone) {
+            width: 27.2rem;
+            padding: 2rem 5.4rem;
+        }
+
+        &:first-child {
+            margin-left: 3.8rem;
+        }
+
+        &:last-child {
+            margin-right: 3.8rem;
         }
 
         @include respond(tab-port) {
-            grid-template-columns: repeat(2, 13rem);
+            max-width: 30rem;
         }
 
         @include respond(phone) {
             &:nth-child(2) {
                 @include respond(phone) {
                     margin-top: 5rem;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0
+            }
+
+            &:last-child {
+                margin-right: 0
+            }
+        }
+
+        &--heading {
+            &--right {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+
+                align-self: end;
+
+                @include respond(phone) {
+                    padding: 0 0 0 3rem;
+                }
+
+                &>p {
+                    font-size: $primary-font-size-norm;
+                    font-weight: $bold-font-weight;
+                    color: $primary-color-white;
+
+                    @include respond(tab-port) {
+                        font-size: $primary-font-size-smallest;
+                    }
                 }
             }
         }
@@ -83,6 +184,10 @@
             grid-row: 1 / 2;
 
             align-self: end;
+
+            @include respond(phone) {
+                padding: 0 0 0 3rem;
+            }
         }
 
         &>img {
@@ -91,9 +196,17 @@
             align-self: end;
             justify-self: center;
 
+            height: 15.8rem;
+            width: 14.3rem;
+
             @include respond(tab-port) {
                 height: 10rem;
+                width: 12rem;
                 margin-left: 2rem;
+            }
+
+            @include respond(phone) {
+                margin-left: 0rem;
             }
         }
 
@@ -104,10 +217,15 @@
             grid-row: 2 / 3;
 
             align-self: center;
+
+            @include respond(phone) {
+                padding: 0 3.5rem;
+            }
         }
 
         &:first-child {
             margin-right: 4rem;
+
             @include respond(phone) {
                 margin-right: 0;
             }
@@ -118,8 +236,10 @@
 .offer-details-extended {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-
     margin-top: 5.6rem;
 
-    
+    padding: 6.1rem 0 8.3rem;
+    background-color: $primary-color-grey;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 2rem rgba(0, 0, 0, .1);
 }

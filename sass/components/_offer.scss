@@ -21,6 +21,10 @@
 
     &>p {
         margin-top: 5.5rem;
+
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 
     &__list {
@@ -31,6 +35,10 @@
             color: $primary-color-blue;
             font-size: $primary-font-size-norm;
             margin: 2.4rem 0;
+
+            @include respond(tab-port) {
+                font-size: $primary-font-size-sm;
+            }
         }
     }
 }
@@ -40,7 +48,8 @@
     grid-row: 2 / -1;
 
     margin-top: 10rem;
-    padding: 5rem;
+    padding: 5.3rem 3.3rem 9.1rem;
+    height: 35.2rem;
 
     background-color: $primary-color-green;
     border-radius: 1.6rem;
@@ -48,6 +57,9 @@
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
     @include respond(phone) {
         grid-column: 1 / -1;
@@ -55,6 +67,10 @@
 
         grid-template-rows: repeat(3, min-content);
         grid-template-columns: 1fr;
+        row-gap: 1rem;
+
+        width: 28.8rem;
+        height: 52.8rem;
     }
 
     &>h4 {
@@ -62,29 +78,50 @@
         grid-row: 1 / 2;
         align-self: center;
         margin-bottom: 5rem;
+
+        font-size: $section-headings-sm;
+        font-weight: $semibold-font-weight;
+
+        @include respond(phone) {
+            font-size: $primary-font-size-bg;
+            margin-bottom: 0rem;
+        }
     }
 
     &__item {
-        padding: 5rem;
+        max-height: 12rem;
+        height: 100%;
 
-        @include respond(tab-port-lg) {
-            padding: 3.5rem;
+        display: flex;
+        align-items: center;
+
+        padding: 0 5.2rem;
+
+        &>p {
+            font-weight: $medium-font-weight;
         }
 
-        @include respond(tab-port) {
-            padding: 3rem;
+        @include respond(phone) {
+            padding: 1rem 0rem;
         }
 
-        &:not(:last-child) {
+        &:nth-child(3) {
+            border-left: .1rem solid $primary-color-white;
             border-right: .1rem solid $primary-color-white;
 
             @include respond(phone) {
+                border-left: none;
                 border-right: none;
+
+                border-top: .1rem solid $primary-color-white;
                 border-bottom: .1rem solid $primary-color-white;
+
+                padding: 9rem 0rem;
             }
         }
     }
 }
+
 
 .section-offer__img {
     grid-column: 1 / 2;

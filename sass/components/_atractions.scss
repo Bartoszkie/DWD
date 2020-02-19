@@ -2,7 +2,7 @@
     margin-top: 5.6rem;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @include respond(phone) {
@@ -10,30 +10,48 @@
     }
 
     &-list {
-        font-size: $primary-font-size-norm;
-        font-weight: 500;
         color: $primary-color-blue;
 
         &__item {
             &:not(:last-child) {
                 margin-bottom: 1.8rem;
+                
+                @include respond(phone) {
+                    margin-bottom: 1.5rem;
+                }
             }
+        }
+
+        @include respond(phone) {
+            padding-left: 2rem;
+            padding-right: 0.6rem;
         }
     }
 
     & > img {
-        width: 50%;
+        margin-left: 10.8rem;
+        max-width: 50rem;
+        max-height: 38.9rem;
+
+        @include respond(tab-land) {
+            width: 50%;
+        }
 
         @include respond(tab-port) {
-            width: 45%;
-            align-self: flex-end;
+            max-width: 27.9rem;
+            max-height: 21.7rem;
+            align-self: center;
         }
         
         @include respond(phone) {
             margin-top: 5rem;
-
-            width: 60%;
             align-self: center;
+
+            width: 27.9rem;
+            height: 21.7rem;
+            padding-left: 2rem;
+            padding-right: 0.6rem;
+            margin-left: 0;
         }
     }
 }

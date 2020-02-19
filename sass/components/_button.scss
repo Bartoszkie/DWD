@@ -3,26 +3,30 @@
     &:link,
     &:visited {
         text-decoration: none;
-        
         font-size: $primary-font-size-norm;
-     
-        border-radius: 5rem;
-        padding: 1.2rem 3rem;
+        border-radius: 2.8rem;
+        padding: 1.4rem 3.2rem;
     }
 
     &__header {
         color: $primary-color-white;
         background-color: $primary-color-green;
+        font-weight: $medium-font-weight;
+        margin: 1.2rem 0;
     }
 
     &__section {
         color: $primary-color-blue;
         background-color: $primary-color-white;
+        font-weight: $medium-font-weight;
+        width: 100%;
+        max-width: 20.7rem;
     }
 
     &__mobile {
         background-color: $primary-color-green;
         color: $primary-color-white;
+        font-weight: $medium-font-weight;
         width: 80%;
         text-align: center;
     }
