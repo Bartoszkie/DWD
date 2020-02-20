@@ -306,40 +306,44 @@
 
     <section class="section-gallery">
         <h5 class="heading heading-blue heading-h5 center-text">Galeria zdjęć</h5>
-        <div class="glider-contain multiple">
-            <div class="glider">
-                <figure>
-                    <img src="./assets/img/start-secton-bg.jpg" alt="test">
-                </figure>
-                <figure>
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
-                    </blockquote>
-                </figure>
-                <figure>
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
-                    </blockquote>
-                </figure>
-                <figure>
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
-                    </blockquote>
-                </figure>
-                <figure>
-                    <blockquote>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.
-                    </blockquote>
-                </figure>
+        <div class="slideshow-top">
+            <div class="mySlides fade">
+                <img src="./assets/img/start-secton-bg.jpg" class="mySlides-img" alt="image_1">
             </div>
-            <button class="glider-prev">
-                <i class="fas fa-angle-left"></i>
-            </button>
-            <button class="glider-next">
-                <i class="fas fa-angle-right"></i>
-            </button>
-
-            <div class="glider-dots" id="dots"></div>
+            <div class="mySlides fade">
+                <img src="./assets/img/item2 (2).jpg" class="mySlides-img" alt="image_1">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assets/img/item3 (2).PNG" class="mySlides-img" alt="image_1">
+            </div>
+            <a class="resize" onclick="resize()">
+                <i class="fas fa-expand-alt"></i>
+            </a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slideshow-bottom">
+            <a class="image-preview-sm" onclick="plusSlides(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <div class="slide-sm">
+                <img src="./assets/img/start-secton-bg.jpg" class="smallSlides-img" alt="image_1">
+            </div>
+            <div class="slide-sm">
+                <img src="./assets/img/item2 (2).jpg" class="smallSlides-img" alt="image_2">
+            </div>
+            <div class="slide-sm">
+                <img src="./assets/img/item3 (2).PNG" class="smallSlides-img" alt="image_3">
+            </div>
+            <a class="image-next-sm" onclick="plusSlides(1)">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 

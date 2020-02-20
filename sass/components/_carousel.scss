@@ -1,0 +1,148 @@
+.slideshow-top {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+
+    img {
+        border-radius: 16px;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.prev,
+.next,
+.resize {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    padding: 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+
+    background-color: rgba(0, 0, 0, .1);
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.prev {
+    right: 80px;
+}
+
+.next {
+    right: 20px;
+}
+
+.resize {
+    right: 140px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    display: none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+
+    @include respond(phone) {
+        display: inline-block;
+    }
+}
+
+.active,
+.dot:hover {
+    background-color: rgba(201, 201, 201, 0.1);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slideshow-bottom {
+    max-width: 900px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        border-radius: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+
+.slide-sm {
+    height: 8rem;
+    width: 8rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.active-sm {
+    border: 3px solid $primary-color-blue;
+}
+
+.resized {
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+}
+
+.image-preview-sm, .image-next-sm {
+    font-size: 2rem;
+    color: $primary-color-blue;
+    font-weight: $bold-font-weight;
+}
+
+.image-preview-sm {
+    margin-right: 2rem;
+}
+
+.image-next-sm {
+    margin-left: 2rem;
+}
