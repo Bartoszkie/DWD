@@ -167,6 +167,8 @@
     flex-direction: column;
     align-items: center;
 
+    padding: 0 !important;
+
     @include respond(tab-port-lg) {
         margin: 9.4rem 0 0;
     }

@@ -51,8 +51,6 @@ function createBorder() {
     item.classList.contains("active-sm")
   );
 
-  console.log(isBorder);
-
   if (isBorder) {
     smallSlidesArray.find(item => {
       if (item.classList.contains("active-sm")) {
@@ -99,22 +97,33 @@ function showSlides(n) {
 }
 
 function resize() {
-    console.log('iamin');
-    console.log(resized);
-    
   if (!resized) {
     biggerSlidesArray.find(item => {
       if (item.parentElement.style.display === "block") {
-        item.classList.add("resized");
+        item.style.transform = "scale(1.5)";
+        changePositionOfControls(resized);
         resized = true;
       }
     });
   } else {
     biggerSlidesArray.find(item => {
       if (item.parentElement.style.display === "block") {
-        item.classList.remove("resized");
+        item.style.transform = "scale(1)";
+        changePositionOfControls(resized);
         resized = false;
       }
     });
+  }
+}
+
+function changePositionOfControls(isResized) {
+  let slideshowTopATag = Array.from(
+    document.querySelectorAll(".slideshow-top a")
+  );
+
+  if (!isResized) {
+    slideshowTopATag.forEach(item => (item.style.top = "110%"));
+  } else {
+    slideshowTopATag.forEach(item => (item.style.top = "90%"));
   }
 }
