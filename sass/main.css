@@ -417,14 +417,31 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  -webkit-transform: translateX(2rem);
-          transform: translateX(2rem);
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .offer {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
 }
 
 @media only screen and (max-width: 56.25em) {
   .offer {
-    -webkit-transform: translateX(-5rem);
-            transform: translateX(-5rem);
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
   }
 }
 
@@ -464,6 +481,7 @@ body {
   .offer__list {
     -webkit-transform: translateX(1rem);
             transform: translateX(1rem);
+    padding: 0 2rem;
   }
 }
 
@@ -509,6 +527,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .offer-details {
+    margin-top: 6.6rem;
     grid-column: 1 / -1;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -593,14 +612,26 @@ body {
       align-self: end;
   -ms-grid-column-align: center;
       justify-self: center;
+  width: 39.2rem;
+  height: 38.0rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-offer__img {
+    width: 19.7rem;
+    height: 19.0rem;
+    margin-bottom: 20%;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .section-offer__img {
+    margin-top: 4.2rem;
     grid-column: 1 / -1;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+    margin-bottom: 0;
   }
 }
 
@@ -1653,6 +1684,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-about-us {
+    margin-top: 6.1rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
@@ -1683,6 +1715,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-offer {
+    margin-top: 7.1rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
@@ -1728,6 +1761,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-offer-types {
+    margin-top: 6.3rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 6;
     -ms-grid-row-span: 1;
@@ -1802,6 +1836,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-atractions {
+    margin-top: 6rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;

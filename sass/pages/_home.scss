@@ -79,11 +79,6 @@
     &__paragraph {
         width: 100%;
         max-width: 77.2rem;
-
-        // @include respond(tab-port) {
-        //     grid-column: left-space-start / right-space-end;
-        // }
-
         @include respond(tab-port) {
             max-width: 63.12rem;
         }
@@ -95,6 +90,8 @@
     }
 
     @include respond(phone) {
+        margin-top: 6.1rem;
+
         grid-column: left-space-start / right-space-end;
         grid-row: 4 / 5;
     }
@@ -115,6 +112,7 @@
     }
 
     @include respond(phone) {
+        margin-top: 7.1rem;
         grid-column: left-space-start / right-space-end;
         grid-row: 5 / 6;
 
@@ -142,6 +140,7 @@
     }
 
     @include respond(phone) {
+        margin-top: 6.3rem;
         grid-column: left-space-start / right-space-end;
         grid-row: 6 / 7;
     }
@@ -195,6 +194,8 @@
     grid-row: 7 / 8;
 
     @include respond(phone) {
+        margin-top: 6rem;
+        
         grid-column: left-space-start / right-space-end;
         grid-row: 8 / 9;
 

@@ -1,10 +1,18 @@
 .offer {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    transform: translateX(2rem);
+    transform: translateX(-2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    @include respond(tab-land) {
+        transform: translateX(2rem);
+    }
 
     @include respond(tab-port) {
-        transform: translateX(-5rem);
+        transform: translateX(-2rem);
     }
 
     @include respond(phone) {
@@ -32,6 +40,7 @@
 
         @include respond(phone) {
             transform: translateX(1rem);
+            padding: 0 2rem;
         }
 
         &__item {
@@ -66,6 +75,8 @@
     align-items: center;
 
     @include respond(phone) {
+        margin-top: 6.6rem;
+
         grid-column: 1 / -1;
         grid-row: 3 / 4;
 
@@ -134,8 +145,19 @@
     align-self: end;
     justify-self: center;
 
+    width: 39.2rem;
+    height: 38.0rem;
+
+    @include respond(tab-port) {
+        width: 19.7rem;
+        height: 19.0rem;
+        margin-bottom: 20%;
+    }
+
     @include respond(phone) {
+        margin-top: 4.2rem;
         grid-column: 1 / -1;
         grid-row: 2 / 3;
+        margin-bottom: 0;
     }
 }
