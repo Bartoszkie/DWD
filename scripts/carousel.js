@@ -1,6 +1,6 @@
 var slideIndex = 1;
-showSlides(slideIndex);
-
+let resized = false;
+var currentAciveElement;
 const smallSlidesArray = Array.from(
   document.getElementsByClassName("smallSlides-img")
 );
@@ -9,16 +9,11 @@ const biggerSlidesArray = Array.from(
   document.getElementsByClassName("mySlides-img")
 );
 
-let resized = false;
-var currentAciveElement;
+showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
-  biggerSlidesArray.filter(item => {
-    if (item.parentElement.style.display === "block") {
-      return (currentAciveElement = item.getAttribute("src"));
-    }
-  });
+  setCurrentActiveElement();
   createBorder();
 }
 
@@ -52,23 +47,33 @@ function createBorder() {
   );
 
   if (isBorder) {
+    setCurrentActiveElement();
     smallSlidesArray.find(item => {
       if (item.classList.contains("active-sm")) {
         item.classList.remove("active-sm");
       }
     });
-    smallSlidesArray.filter(item => {
-      if (item.getAttribute("src") === currentAciveElement) {
-        item.classList.add("active-sm");
-      }
-    });
+    addClassActiveSm();
   } else {
-    smallSlidesArray.filter(item => {
-      if (item.getAttribute("src") === currentAciveElement) {
-        item.classList.add("active-sm");
-      }
-    });
+    setCurrentActiveElement();
+    addClassActiveSm();
   }
+}
+
+function addClassActiveSm() {
+  smallSlidesArray.filter(item => {
+    if (item.getAttribute("src") === currentAciveElement) {
+      item.classList.add("active-sm");
+    }
+  });
+}
+
+function setCurrentActiveElement() {
+  biggerSlidesArray.filter(item => {
+    if (item.parentElement.style.display === "block") {
+      return (currentAciveElement = item.getAttribute("src"));
+    }
+  });
 }
 
 function currentSlide(n) {

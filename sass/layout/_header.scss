@@ -13,21 +13,12 @@
     &__logo {
         display: flex;
         margin-right: auto;
+        align-items: center;
 
         &--img {
-            height: 5.6rem;
+            height: 4.159rem;
+            width: 15.98rem;
             margin-right: 2rem;
-        }
-    }
-
-    &__title {
-        color: $primary-color-blue;
-        align-self: flex-end;
-
-        font-size: $section-headings-sm;
-    
-        @include respond(tab-port) {
-            font-size: $primary-font-size-norm;
         }
     }
 
