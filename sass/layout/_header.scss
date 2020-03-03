@@ -3,8 +3,12 @@
     grid-row: 1 / 2;
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
     z-index: 10;
+    background-color: $primary-color-white;
 
     font-size: $primary-font-size-norm;
 
