@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 30rem 30rem;
     grid-template-rows: min-content repeat(2, 1fr);
-    grid-gap: 5rem;
+    row-gap: 5rem;
 
     @include respond(phone) {
         grid-template-columns: 1fr;
@@ -18,5 +18,9 @@
     & > h5 {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
+
+        @include respond(phone) {
+            transform: translateY(2rem);
+        }
     }
 }

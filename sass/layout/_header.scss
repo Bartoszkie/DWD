@@ -9,7 +9,7 @@
     width: 100%;
     z-index: 10;
     background-color: $primary-color-white;
-    box-shadow: 0 .3rem .5rem -.2rem rgba(0, 0, 0, .5);
+    box-shadow: 0 .3rem .5rem -.2rem rgba(0, 0, 0, .1);
 
     font-size: $primary-font-size-norm;
 
@@ -84,6 +84,11 @@
             color: $primary-color-blue;
             font-size: $primary-font-size-norm;
             font-weight: $regular-font-weight;
+            transition: .2s ease-in-out all;
+
+            &:hover {
+                font-weight: $medium-font-weight;
+            }
         }
     }
 }

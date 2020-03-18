@@ -81,6 +81,7 @@
         align-self: center;
         font-size: $primary-font-size-bg;
         font-weight: $semibold-font-weight;
+        margin-top: 6rem;
 
         @include respond(phone) {
             font-size: $primary-font-size-norm;
@@ -136,8 +137,12 @@
             margin-right: 3.8rem;
         }
 
-        @include respond(tab-port) {
-            max-width: 30rem;
+        @include respond(tab-land) {
+            max-width: 35rem;
+        }
+
+        @media only screen and(max-width: 990px) {
+            max-width: 32rem;
         }
 
         @include respond(phone) {
@@ -242,4 +247,8 @@
     background-color: $primary-color-grey;
     border-radius: 1rem;
     box-shadow: .1rem .1rem 2rem rgba(0, 0, 0, .1);
+
+    @media screen and (max-width: 400px) {
+        width: 28.8rem
+    }
 }

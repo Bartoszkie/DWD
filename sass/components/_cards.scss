@@ -4,11 +4,6 @@
     align-items: center;
     justify-content: center;
 
-    @include respond(tab-port) {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-
     .card {
         background-color: $card-bg;
         box-shadow: .1rem .1rem 2rem rgba(0, 0, 0, .1);
@@ -27,7 +22,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: min-content 1fr;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             grid-template-columns: min-content 1fr;
             grid-template-rows: 1fr;
 
@@ -57,7 +52,7 @@
             align-items: center;
             width: 20rem;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 margin-right: 5rem;
                 justify-content: center;
             }
@@ -72,7 +67,7 @@
             }
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             flex-direction: row;
         }
 
@@ -83,7 +78,7 @@
             padding: 0;
             margin: 0;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 width: 7.2rem;
                 height: 7.2rem;
             }
@@ -93,7 +88,7 @@
             margin-top: 2.3rem;
             height: 100%;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 margin-top: 0;
             }
 

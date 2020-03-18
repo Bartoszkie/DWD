@@ -22,6 +22,7 @@
     }
 
     &>h2 {
+        
         @include respond(phone) {
             text-align: center;
         }
@@ -29,14 +30,16 @@
 
     &>p {
         margin-top: 5.5rem;
+        transform: translateY(-2rem);
 
         @include respond(phone) {
             text-align: center;
         }
     }
 
+
     &__list {
-        transform: translateX(2rem);
+        transform: translate(2rem, -2rem);
 
         @include respond(phone) {
             transform: translateX(1rem);

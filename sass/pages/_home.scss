@@ -177,6 +177,8 @@
     }
 
     & > h5 {
+        margin-bottom: 4rem;
+
         @include respond(phone) {
             font-size: $primary-font-size-norm;
             margin-bottom: 1.6rem;
@@ -215,7 +217,7 @@
 
         @include respond(phone) {
             margin-left: 0rem; 
-            text-align: center;
+            text-align: left;
         }
     }
 }

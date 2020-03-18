@@ -79,6 +79,14 @@
         font-size: $primary-font-size-sm;
     }
 
+    &--footer--link {
+        &:hover {
+            cursor: pointer;
+            font-weight: $medium-font-weight;
+            text-decoration: underline;
+        }
+    }
+
     &--link {
         text-decoration: none;
         font-size: $primary-font-size-norm;
@@ -88,6 +96,11 @@
         @include respond(phone) {
             font-size: $primary-font-size-sm;
             font-weight: $semibold-font-weight;
+        }
+
+        &:hover {
+            color: rgba(0, 87, 124, 0.52);
+            text-decoration: underline;
         }
     }
 
