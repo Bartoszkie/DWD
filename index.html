@@ -37,13 +37,13 @@
                 </li>
             </ul>
         </nav>
+
         <div class="hamburger" id="hamburger">
             <span class="hamburger__dash"></span>
             <span class="hamburger__dash"></span>
             <span class="hamburger__dash"></span>
         </div>
     </header>
-
 
     <section class="section-start">
         <div class="section-start__box center-box center-text">
@@ -52,8 +52,18 @@
                 Dom Wczasów Dziecięcych w Świeradowie-Zdroju jest jedynym w Górach Izerskich miejscem specjalizującym
                 się w organizacji wypoczynku dzieci i młodzieży
             </h4>
-            <a class="btn btn__section" href="https://www.youtube.com/watch?v=SyqY-Ff4kWA&feature=emb_title">Zobacz
+            <a class="btn btn__section" id="header__btn">Zobacz
                 Film</a>
+        </div>
+
+        <div class="video-container" id="video-cont">
+            <div class="video-hide" id="videostory">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SyqY-Ff4kWA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+    
+            <div id="video-close"></div>
         </div>
     </section>
 
@@ -461,7 +471,7 @@
         </div>
     </footer>
 
-    <script src="./dist/global_script.bundle.js"></script>
+    <script src="./scripts/global-srcipt.js"></script>
     <script src="./scripts/carousel.js"></script>
 </body>
 
