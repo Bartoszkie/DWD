@@ -171,21 +171,22 @@ img {
 }
 
 .lSSlideOuter  {
-    max-width: 1200px;
-    max-height: 600px;
+    border-radius: 15px;
+
+    @include respond(phone) {
+        border-radius: 0;
+    }
 }
 
 .demo {
     width: 100%;
     max-width: 1200px;
-    max-height: 600px;
 
     ul {
         list-style: none outside none;
         padding-left: 0;
         margin-bottom: 0;
     }
-
 
     li {
         display: block;
@@ -215,6 +216,11 @@ img {
     border-radius: 50%;
 
     display: none;
+
+    
+    @include respond(phone) {
+        background-color: transparent;
+    }
 }
 
 .lSPager {
@@ -238,6 +244,10 @@ img {
         width: 100%;
         font-size: 5rem;
         color: #fff;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 }
 
@@ -256,23 +266,14 @@ img {
         width: 100%;
         font-size: 5rem;
         color: #fff;
+
+        
+        @include respond(phone) {
+            display: none;
+        }
     }
 }
 
 .lSSlideOuter .lSPager.lSGallery li.active {
     border: .4rem solid #00577C;
 }
-
-// .lSPrev {
-//     background-image: url(../../assets/img/arrow.png) !important;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-// }
-
-// .lSNext {
-//     background-image: url(../../assets/img/arrow.png) !important;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-// }

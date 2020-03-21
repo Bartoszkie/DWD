@@ -1514,14 +1514,18 @@ img {
 }
 
 .lSSlideOuter {
-  max-width: 1200px;
-  max-height: 600px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .lSSlideOuter {
+    border-radius: 0;
+  }
 }
 
 .demo {
   width: 100%;
   max-width: 1200px;
-  max-height: 600px;
 }
 
 .demo ul {
@@ -1559,6 +1563,13 @@ img {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .lSPrev,
+  .lSNext {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
   .lSPager {
     display: none;
   }
@@ -1582,6 +1593,12 @@ img {
   color: #fff;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .lSPrev::before {
+    display: none;
+  }
+}
+
 .lSNext {
   position: relative;
 }
@@ -1598,6 +1615,12 @@ img {
   width: 100%;
   font-size: 5rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .lSNext::before {
+    display: none;
+  }
 }
 
 .lSSlideOuter .lSPager.lSGallery li.active {
