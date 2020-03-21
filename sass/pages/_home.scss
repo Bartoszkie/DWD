@@ -21,9 +21,18 @@
     }
 
     &__box {
+        width: 100%;
+        max-width: 70rem;
+
         & > h4 {
             margin: 3.8rem 0 4.9rem; 
             max-width: 72.7rem;
+            line-height: 2;
+           
+            @include respond(tab-port) {
+                font-weight: 600 !important;
+                line-height: 3.2;
+            }
         }
         
         @include respond(tab-port) {
@@ -180,8 +189,9 @@
         margin-bottom: 4rem;
 
         @include respond(phone) {
-            font-size: $primary-font-size-norm;
-            margin-bottom: 1.6rem;
+            font-size: $section-headings-nm;
+            font-weight: $bold-font-weight;
+            margin-bottom: 4.6rem;
         }
     }
 }
@@ -215,6 +225,10 @@
         margin-top: 8rem;
         margin-left: 6rem;
 
+        @include respond(tab-land) {
+            margin-left: 0rem; 
+        }
+
         @include respond(phone) {
             margin-left: 0rem; 
             text-align: left;
@@ -226,7 +240,6 @@
     margin-top: 13rem;
     height: 100%;
     width: 100%;
-    padding: 6rem 8rem 13rem 8rem;
 
     grid-column: left-space-start / right-space-end;
     grid-row: 8 / 9;

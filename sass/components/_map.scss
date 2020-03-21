@@ -7,15 +7,25 @@
 
     @media screen and (max-width: 1460px){
         margin-left: 0;
+        margin-right: 3rem;
+    }
+
+    @media screen and (max-width: 1050px){
+        margin-right: 0rem;
     }
 
     @include respond(tab-port) {
+        width: 60%;
+    }
+
+    @include respond(phone) {
         width: 100%;
     }
 
     &__map {
         margin-top: 5rem;
         position: relative;
+        max-width: 57.5rem;
 
         &::before {
             position: absolute;

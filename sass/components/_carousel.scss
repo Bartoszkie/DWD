@@ -32,27 +32,28 @@ img {
 .resize {
     cursor: pointer;
     position: absolute;
-    top: 90%;
+    top: 50%;
     padding: 20px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 50%;
     user-select: none;
 
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 87, 124, 0.5);
 
     width: 50px;
     height: 50px;
+
     display: flex;
     justify-items: center;
     align-items: center;
 }
 
 .prev {
-    right: 80px;
+    left: 20px;
 }
 
 .next {
@@ -60,12 +61,13 @@ img {
 }
 
 .resize {
-    right: 140px;
+    top: 90%;
+    right: 2rem;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #00577C;
 }
 
 .dots {

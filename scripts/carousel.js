@@ -122,13 +122,17 @@ function resize() {
 }
 
 function changePositionOfControls(isResized) {
-  let slideshowTopATag = Array.from(
-    document.querySelectorAll(".slideshow-top a")
-  );
+  let resizeButton = document.querySelector(".resize");
+  let prev = document.querySelector(".prev");
+  let next = document.querySelector(".next");
 
   if (!isResized) {
-    slideshowTopATag.forEach(item => (item.style.top = "110%"));
+    resizeButton.style.top = "110%";
+    prev.style.left = "-5%";
+    next.style.right = "-5%";
   } else {
-    slideshowTopATag.forEach(item => (item.style.top = "90%"));
+    resizeButton.style.top = "90%";
+    prev.style.left = "20px";
+    next.style.right = "20px";
   }
 }

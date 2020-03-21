@@ -23,9 +23,12 @@
     }
 
     .video-hide iframe {
-        @include respond(phone) {
-            width: 97vw;
-        }
+        max-width: 1080px;
+        max-height: 524px;
+        width: 100vw;
+        height: 100vh;
+
+      
     }
 
     #video-close {

@@ -17,7 +17,7 @@
     &-h2 {
         font-size: $section-headings-lg;
 
-        
+
         @include respond(tab-port) {
             font-size: $section-headings-md;
         }
@@ -37,7 +37,7 @@
 
     &-h4 {
         font-size: $section-headings-sm;
-    
+
         @include respond(tab-port) {
             font-size: $primary-font-size-norm;
         }
@@ -58,6 +58,10 @@
     }
 }
 
+.lightweight {
+    font-weight: 400;
+}
+
 .center-text {
     text-align: center;
 }
@@ -76,7 +80,7 @@
     }
 
     &--small {
-        font-size: $primary-font-size-sm;
+        font-size: $primary-font-size-sm !important;
     }
 
     &--footer--link {

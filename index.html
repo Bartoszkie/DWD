@@ -56,7 +56,7 @@
                 Film</a>
         </div>
 
-        <div class="video-container" id="video-cont">
+        <div class="video-container" id="video-cont" onclick="closeVideoFunc();">
             <div class="video-hide" id="videostory">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/SyqY-Ff4kWA" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -152,7 +152,7 @@
         <img class="section-offer__img" src="./assets/img/Girl on a bike.svg" alt="bike-sun-img" />
         <div class="offer">
             <h2 class="heading heading-h2 heading-blue">Oferta</h2>
-            <p class="paragraph left-text"><b>Proponujemy następujące formy wypoczynku:</b></p>
+            <p class="paragraph left-text">Proponujemy następujące formy wypoczynku:</p>
             <ul class="offer__list">
                 <li class="offer__list__item">
                     zielone szkoły
@@ -264,47 +264,44 @@
         <div class="offer-details-extended">
             <div class="offers-details">
                 <h3 class="heading-h3 heading-blue">Oferta Rozszerzona: </h3>
-                <h4 class="heading-h4 heading-blue">(dodatkowo płatne imprezy)</h4>
+                <h4 class="heading-h4 heading-blue lightweight">(atrakcje płatne dodatkowo)</h4>
                 <br><br>
-                <h4 class="heading-h4 heading-blue p-lr">Wycieczki autokarowe do Czech</h4>
-                <ul class="offers-details__list">
+                <h4 class="heading-h4 heading-blue p-lr">Czechy</h4>
+                <ul class="offers-details__list offers-details__list--standrad">
                     <li class="offers-details__list__item">
-                        Czeski Raj (Prachowskie Skały) (jedno z najciekawszych, najładniejszych i najbardziej
-                        atrakcyjnych skalnych miast zlokalizowanych w Czeskim Raju) <br> - 90km
+                        <p>Czeski Raj (Prachowskie Skały) - 90km</p>
+                        jedno z najciekawszych, najładniejszych i najbardziej
+                        atrakcyjnych skalnych miast zlokalizowanych w Czeskim Raju 
                     </li>
                     <li class="offers-details__list__item">
-                        Praga (Hradaczany, Złota Uliczka, Most Karola, Stare Miasto, Plac Wacława) <br> - 150km
+                        <p>Praga - 150km</p>
+                        Hradaczany, Złota Uliczka, Most Karola, Stare Miasto, Plac Wacława
                     </li>
                     <li class="offers-details__list__item">
-                        Liberec (Ogród ZOO, Ogród Botaniczny, Babilon - największe centrum rozrywki dla dzieci i
-                        dorosłych w Czechach, iQLANDIA - nowoczesne centrum nauki, w którym dzieci i dorośli bawią się
-                        nauką, wjazd koleją gondolową na Jested /1012 m n.p.m/ - <br> uważany za najpiękniejszy punkt
-                        widokowy w Republice Czeskiej - 50km)
+                        <p>Liberec - 50km</p>
+                        Ogród ZOO, Ogród Botaniczny, centrum rozrywki Babilon, centrum nauki iQULANDIA, kolej gondolowa na punkt widokowy Jested /1012 m n.p.m
                     </li>
                     <li class="offers-details__list__item">
-                        Frydlant (przepięknie zachowany i wyposażony zamek z XIII w.) <br> - 20km
-                    </li>
+                        <p>Frydlant - 20km</p>
+                        przepięknie zachowany i wyposażony zamek z XIII w.                    </li>
                 </ul>
             </div>
             <div class="offers-details">
-                <h4 class="heading-h4 heading-blue">Okoliczne atrakcje</h4>
-                <ul class="offers-details__list">
+                <h4 class="heading-h4 heading-blue m-t-m">Okoliczne atrakcje</h4>
+                <ul class="offers-details__list offers-details__list--standrad">
                     <li class="offers-details__list__item">
-                        Karpacz i okolice - możliwość wejścia na Śnieżkę (1602 m n.p.m), kościół Wang, Western City w
-                        Ścięgnach, Park Miniatur i Sztolnie w Kowarach <br> - 60-80 km
+                        <p>Karpacz i okolice - 60 - 80km</p>
+                         możliwość wejścia na Śnieżkę (1602 m n.p.m), kościół Wang, Western City w
+                        Ścięgnach, Park Miniatur i Sztolnie w Kowarach 
                     </li>
                     <li class="offers-details__list__item">
-                        Szklarska Poręba i okolice - możliwość wejścia na Szrenicę (1362 m n.p.m), "Leśna Huta", "Chata
+                        <p>Szklarska Poręba i okolice - 20 km</p>
+                        możliwość wejścia na Szrenicę (1362 m n.p.m), "Leśna Huta", "Chata
                         Walońska", Huta Szkła Kryształowego "Julia", "Dinopark"
                     </li>
-                </ul>
-            </div>
-            <div class="offers-details">
-                <h4 class="heading-h4 heading-blue p-lr">Wycieczka autokarowa do zamku Czocha</h4>
-                <ul class="offers-details__list">
                     <li class="offers-details__list__item">
-                        najlepiej zachowany zamek na Dolnym Śląsku z początku XIII w., zapora na rzece Kwisia <br> - 20
-                        km
+                        <p>Zamek Czacha - 20km</p>
+                        najlepiej zachowany zamek na Dolnym Śląsku z początku XIII w., zapora na rzece Kwisia 
                     </li>
                 </ul>
             </div>
@@ -413,7 +410,7 @@
         <div class="footer-details">
             <h5 class="heading-h5 heading-white">Kontakt</h5>
             <div class="footer-details__box footer-details__box--1">
-                <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
+                <p class="paragraph--small paragraph--white footer-details__box__heading weight--bold">
                     Dom Wczasów Dziecięcych
                 </p>
                 <p class="paragraph paragraph--white  paragraph--footer--link paragraph--small">
@@ -435,7 +432,7 @@
                 </p>
             </div>
             <div class="footer-details__box footer-details__box--3">
-                <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
+                <p class="paragraph--small paragraph--white footer-details__box__heading weight--bold">
                     Do pobrania
                 </p>
                 <p class="paragraph paragraph--white paragraph--footer--link paragraph--small">
@@ -449,7 +446,7 @@
                 </p>
             </div>
             <div class="footer-details__box footer-details__box--4">
-                <p class="paragraph paragraph--white footer-details__box__heading weight--bold">
+                <p class="paragraph--small paragraph--white footer-details__box__heading weight--bold">
                     RODO
                 </p>
                 <p class="paragraph paragraph--white paragraph--footer--link paragraph--small">

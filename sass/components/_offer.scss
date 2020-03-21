@@ -30,11 +30,11 @@
 
     &>p {
         margin-top: 5.5rem;
+        margin-bottom: 2rem;
         transform: translateY(-2rem);
-
-        @include respond(phone) {
-            text-align: center;
-        }
+        font-weight: $semibold-font-weight !important;
+        font-size: $primary-font-size-norm;
+        // margin-left: 3rem;
     }
 
 
@@ -47,10 +47,13 @@
         }
 
         &__item {
-            font-weight: 700;
+            font-weight: $semibold-font-weight;
             color: $primary-color-blue;
-            font-size: $primary-font-size-norm;
-            margin: 2.4rem 0;
+            font-size: $primary-font-size-bg;
+
+            &:not(:first-child) {
+                margin: 1.6rem 0;
+            }
 
             @include respond(tab-port) {
                 font-size: $primary-font-size-sm;
@@ -97,7 +100,7 @@
         align-self: center;
         margin-bottom: 5rem;
 
-        font-size: $section-headings-sm;
+        font-size: $section-headings-nm;
         font-weight: $semibold-font-weight;
 
         @include respond(phone) {
