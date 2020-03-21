@@ -169,3 +169,110 @@ img {
 .image-next-sm {
     margin-left: 2rem;
 }
+
+.lSSlideOuter  {
+    max-width: 1200px;
+    max-height: 600px;
+}
+
+.demo {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 600px;
+
+    ul {
+        list-style: none outside none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+
+    li {
+        display: block;
+        float: left;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.lSAction {
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.lSPrev,
+.lSNext {
+    background-color: rgba(0, 87, 124, 0.5);
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50%;
+
+    display: none;
+}
+
+.lSPager {
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.lSPrev {
+    position: relative;
+
+    &::before {
+        content: "<";
+        text-align: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 100%;
+        font-size: 5rem;
+        color: #fff;
+    }
+}
+
+.lSNext {
+    position: relative;
+
+    &::before {
+        content: ">";
+        text-align: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 100%;
+        font-size: 5rem;
+        color: #fff;
+    }
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active {
+    border: .4rem solid #00577C;
+}
+
+// .lSPrev {
+//     background-image: url(../../assets/img/arrow.png) !important;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+// }
+
+// .lSNext {
+//     background-image: url(../../assets/img/arrow.png) !important;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+// }

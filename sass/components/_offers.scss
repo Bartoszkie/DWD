@@ -24,7 +24,7 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     background-color: $primary-color-grey;
-    border-radius: 1rem;
+    border-radius: 15px;
     box-shadow: .1rem .4rem .8rem rgba(0, 0, 0, .08);
 
     @media screen and (max-width: 400px) {
@@ -42,13 +42,7 @@
 
     &>h3,
     h4 {
-        // padding: 0 10.4rem;
-
-        padding: 0 2rem;
-
-        @include respond(tab-port) {
-            padding: 0 2rem;
-        }
+        padding: 0 10.4rem;
 
         @include respond(phone) {
             padding: 0;
@@ -56,7 +50,7 @@
     }
 
     h4 {
-        font-size: 2rem;
+        font-size: 1.8rem;
 
         @include respond(phone) {
             text-align: center;
@@ -89,7 +83,13 @@
 
         &--standrad {
             list-style-type: none;
-            padding: 0 2rem;
+
+            padding: 0 10.4rem;
+
+            @include respond(phone) {
+                padding: 0 2rem;
+            }
+            
         }
     }
 
@@ -264,7 +264,7 @@
 
     padding: 6.1rem 0 8.3rem;
     background-color: $primary-color-grey;
-    border-radius: .15rem;
+    border-radius: 15px;
     box-shadow: .1rem .4rem .8rem rgba(0, 0, 0, .08);
 
     @media screen and (max-width: 400px) {
