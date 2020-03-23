@@ -9,6 +9,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(tab-port) {
+        top: 70%;
+    }
+
+    @include respond(phone) {
+        top: 60%;
+    }
+}
+
+.heading-mobile-f {
+    display: block;
+
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.heading-mobile-t {
+    font-size: 1.4rem !important;
+
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .m-t-s {

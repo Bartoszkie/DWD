@@ -170,12 +170,16 @@ img {
     margin-left: 2rem;
 }
 
-.lSSlideOuter  {
+.lSSlideOuter {
     border-radius: 15px;
 
-    @include respond(phone) {
-        border-radius: 0;
+    @media only screen and(max-width: 935px) {
+        border-radius: 0px;
     }
+}
+
+.lSAction>a {
+    z-index: 9 !important;
 }
 
 .demo {
@@ -217,16 +221,38 @@ img {
 
     display: none;
 
-    
+
     @include respond(phone) {
         background-color: transparent;
     }
 }
 
 .lSPager {
-    @include respond(phone) {
-        display: none;
-    }
+    // @include respond(phone) {
+    //     display: none;
+    // }
+}
+
+.lSpg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-3rem) !important;
+}
+
+.active {
+    background-color: transparent;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a,
+.lSSlideOuter .lSPager.lSpg>li:hover a {
+    background-color: rgba(0, 87, 124, 0.5);
 }
 
 .lSPrev {
@@ -267,7 +293,7 @@ img {
         font-size: 5rem;
         color: #fff;
 
-        
+
         @include respond(phone) {
             display: none;
         }

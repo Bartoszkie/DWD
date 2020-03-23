@@ -29,6 +29,13 @@
         transition: .2s ease-in-out all;
         cursor: pointer;
 
+        @include respond(phone){
+            font-weight: $medium-font-weight;
+            width: 80%;
+            max-width: 80%;
+            text-align: center;
+        }
+
         &:hover {
             background-color: rgba(255, 255, 255, 0.76); 
         }

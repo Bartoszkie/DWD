@@ -24,17 +24,25 @@
         width: 100%;
         max-width: 70rem;
 
-        & > h4 {
-            margin: 3.8rem 0 4.9rem; 
+        &>h4 {
+            margin: 3.8rem 0 4.9rem;
             max-width: 72.7rem;
             line-height: 2;
-           
+
             @include respond(tab-port) {
                 font-weight: 600 !important;
-                line-height: 3.2;
             }
         }
-        
+
+        &>.heading-mobile-t {
+            display: none;
+
+            @include respond(phone) {
+                display: block;
+                font-size: 1.4rem;
+            }
+        }
+
         @include respond(tab-port) {
             width: 100%;
         }
@@ -42,22 +50,11 @@
 
     @include respond(phone) {
         &__box {
-           width: 100%;
-        }
-
-        &__box {
-            &>h4,
-            a {
-                display: none;
-            }
-        }
-
-        &__box {
-            &>h1 {
-                transform: translateY(7rem);
-            }
+            width: 100%;
+            padding: 0 3.75rem;
         }
     }
+
 
     &--mobile {
         display: none;
@@ -88,8 +85,9 @@
     &__paragraph {
         width: 100%;
         max-width: 77.2rem;
+
         @include respond(tab-port) {
-            max-width: 63.12rem;
+            max-width: 55rem;
         }
     }
 
@@ -166,7 +164,7 @@
 
 .section-gallery {
     margin: 9.4rem 10.4rem 0;
-    
+
     grid-column: left-space-start / right-space-end;
     grid-row: 6 / 7;
     position: relative;
@@ -185,7 +183,7 @@
         grid-row: 7 / 8;
     }
 
-    & > h5 {
+    &>h5 {
         margin-bottom: 4rem;
 
         @include respond(phone) {
@@ -195,7 +193,7 @@
         }
     }
 
-    
+
 }
 
 .section-atractions {
@@ -209,14 +207,14 @@
 
     @include respond(phone) {
         margin-top: 6rem;
-        
+
         grid-column: left-space-start / right-space-end;
         grid-row: 8 / 9;
 
         align-items: center;
     }
 
-    & > p {
+    &>p {
         align-self: center;
         margin-top: 4.6rem;
         width: 100%;
@@ -228,11 +226,11 @@
         margin-left: 6rem;
 
         @include respond(tab-land) {
-            margin-left: 0rem; 
+            margin-left: 0rem;
         }
 
         @include respond(phone) {
-            margin-left: 0rem; 
+            margin-left: 0rem;
             text-align: left;
         }
     }

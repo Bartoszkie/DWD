@@ -34,7 +34,11 @@
         transform: translateY(-2rem);
         font-weight: $semibold-font-weight !important;
         font-size: $primary-font-size-norm;
-        // margin-left: 3rem;
+        
+        @include respond(phone) {
+            margin-left: 2.5rem;
+            margin-bottom: 0rem;
+        }
     }
 
 
@@ -117,6 +121,10 @@
         align-items: center;
 
         padding: 0 5.2rem;
+
+        @include respond(tab-port) {
+            padding: 0 3rem;
+        }
 
         &>p {
             font-weight: $medium-font-weight;

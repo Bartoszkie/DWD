@@ -89,7 +89,7 @@
             @include respond(phone) {
                 padding: 0 2rem;
             }
-            
+
         }
     }
 
@@ -156,9 +156,15 @@
             margin-right: 3.8rem;
         }
 
-        @include respond(tab-land) {
+
+        @media only screen and(max-width: 1198px) {
             max-width: 35rem;
         }
+
+
+        // @include respond(tab-land) {
+        //     max-width: 35rem;
+        // }
 
         @media only screen and(max-width: 990px) {
             max-width: 32rem;
@@ -211,6 +217,8 @@
 
             @include respond(phone) {
                 padding: 0 0 0 3rem;
+
+                align-self: end;
             }
         }
 
