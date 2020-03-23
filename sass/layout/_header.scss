@@ -32,7 +32,7 @@
         transition: .2s ease-in-out all;
 
         position: relative;
-        z-index: 99999;
+        z-index: 9999999;
 
         @include respond(tab-port) {
             position: absolute;
@@ -41,7 +41,7 @@
             left: 0;
             z-index: -1;
             transform: translateY(-150%);
-            padding-top: 3rem;
+            padding-top: 10rem;
             background-color: $primary-color-white;
         }
     }
@@ -50,6 +50,8 @@
         list-style-type: none;
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 9999999;
 
         @include respond(tab-port) {
             box-shadow: 0 .3rem .5rem -.2rem rgba(0, 0, 0, .5);

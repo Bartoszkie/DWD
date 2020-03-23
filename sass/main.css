@@ -1742,7 +1742,7 @@ img {
   -webkit-transition: .2s ease-in-out all;
   transition: .2s ease-in-out all;
   position: relative;
-  z-index: 99999;
+  z-index: 9999999;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1754,7 +1754,7 @@ img {
     z-index: -1;
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
-    padding-top: 3rem;
+    padding-top: 10rem;
     background-color: #FFFFFF;
   }
 }
@@ -1767,6 +1767,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 9999999;
 }
 
 @media only screen and (max-width: 56.25em) {

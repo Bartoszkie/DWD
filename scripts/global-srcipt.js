@@ -4,25 +4,30 @@ const mobileNavbar = document.getElementById("mobile-navbar");
 let videoOpen = true;
 const closeVideo = document.getElementById("video-cont");
 
-const headerListLink = Array.from(
-  document.querySelectorAll(".header__list__link")
+const header__list__link = Array.from(
+  document.getElementsByClassName("header__list__link")
 );
 
-let smallerThan900 = false;
+const querySelectorToHide = Array.from(document.querySelectorAll(".toHide"));
+
+window.onload = changeBehaviourOfNavigationLinks();
 
 window.addEventListener("resize", () => {
+  changeBehaviourOfNavigationLinks();
+});
+
+function changeBehaviourOfNavigationLinks() {
   const vw = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
   );
+
   if (vw <= 900) {
-    headerListLink.forEach(element => {
-      element.classList.add("toScroll");
-    });
-    const mobileItems = Array.from(document.querySelectorAll(".toScroll"));
-    console.log(mobileItems);
-    
-    mobileItems.forEach(element =>
+    header__list__link.forEach(element => element.classList.add("toHide"));
+    const querySelectorToHide = Array.from(
+      document.querySelectorAll(".toHide")
+    );
+    querySelectorToHide.forEach(element =>
       element.addEventListener("click", () => {
         opened = false;
         mobileNavbar.style.transform = "translateY(-150%)";
@@ -30,11 +35,18 @@ window.addEventListener("resize", () => {
       })
     );
   } else {
-    headerListLink.forEach(element => {
-      element.classList.remove("toScroll");
-    });
+    const querySelectorToHide = Array.from(
+      document.querySelectorAll(".toHide")
+    );
+    querySelectorToHide.forEach(element =>
+      element.addEventListener("click", () => {
+        opened = false;
+        mobileNavbar.style.transform = "translateY(0%)";
+        mobileNavbar.style.opacity = "1";
+      })
+    );
   }
-});
+}
 
 document.getElementById("hamburger").addEventListener("click", () => {
   if (opened) {
@@ -44,7 +56,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
   } else {
     console.log(opened);
     opened = true;
-    mobileNavbar.style.transform = "translateY(20%)";
+    mobileNavbar.style.transform = "translateY(0%)";
     mobileNavbar.style.opacity = "1";
     console.log(opened);
   }
@@ -57,7 +69,7 @@ window.addEventListener("resize", () => {
   );
   if (vw >= 900) {
     opened = true;
-    mobileNavbar.style.transform = "translateY(20%)";
+    mobileNavbar.style.transform = "translateY(0%)";
     mobileNavbar.style.opacity = "1";
   }
 });
