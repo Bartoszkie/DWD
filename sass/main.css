@@ -2000,6 +2000,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .section-start__box > h4 {
+    margin: 2.6rem 0 4.9rem;
+  }
+}
+
 .section-start__box > .heading-mobile-t {
   display: none;
 }

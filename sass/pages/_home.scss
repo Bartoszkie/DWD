@@ -32,7 +32,11 @@
             @include respond(tab-port) {
                 font-weight: 600 !important;
             }
-        }
+
+            @include respond(phone) {
+                margin: 2.6rem 0 4.9rem;
+            }
+        } 
 
         &>.heading-mobile-t {
             display: none;
