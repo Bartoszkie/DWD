@@ -1,14 +1,3 @@
-// $('#lightSlider').lightSlider({
-//     gallery: true,
-//     item: 1,
-//     loop:true,
-//     slideMargin: 0,
-//     thumbItem: 9,
-//     pager: true,
-//     enableDrag: true,
-//     controls: true
-// });
-
 let change = false;
 
 function showGalleryDots() {

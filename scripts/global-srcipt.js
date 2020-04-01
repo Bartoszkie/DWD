@@ -51,14 +51,12 @@ function changeBehaviourOfNavigationLinks() {
 document.getElementById("hamburger").addEventListener("click", () => {
   if (opened) {
     opened = false;
-    mobileNavbar.style.transform = "translateY(-150%)";
     mobileNavbar.style.opacity = "0";
+    mobileNavbar.style.transform = "translateY(-150%)";
   } else {
-    console.log(opened);
     opened = true;
-    mobileNavbar.style.transform = "translateY(0%)";
     mobileNavbar.style.opacity = "1";
-    console.log(opened);
+    mobileNavbar.style.transform = "translateY(0%)";
   }
 });
 
@@ -76,11 +74,9 @@ window.addEventListener("resize", () => {
 
 function closeVideoFunc() {
   if (videoOpen) {
-    console.log("Klikiniete na iksa TRUE");
     closeVideo.style.display = "none";
     videoOpen = false;
   } else {
-    console.log("Klikiniete na iksa FALSE");
     videoOpen = true;
     closeVideo.style.display = "unset";
   }

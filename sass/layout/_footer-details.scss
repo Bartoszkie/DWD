@@ -5,7 +5,7 @@
     row-gap: 5rem;
     transform: translateY(-5rem);
 
-    @include respond(tab-port){
+    @include respond(tab-land){
         transform: translateY(-2rem);
     }
 

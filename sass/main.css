@@ -1877,7 +1877,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 9999999;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1951,7 +1950,7 @@ img {
           transform: translateY(-5rem);
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .footer-details {
     -webkit-transform: translateY(-2rem);
             transform: translateY(-2rem);
