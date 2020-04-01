@@ -33,9 +33,15 @@
         margin-bottom: 2rem;
         transform: translateY(-2rem);
         font-weight: $semibold-font-weight !important;
-        font-size: $primary-font-size-norm;
+        font-size: $primary-font-size-bg;
+
+        @include respond(tab-port) {
+            font-size: $primary-font-size-sm;
+        }
         
         @include respond(phone) {
+            font-size: $primary-font-size-norm;
+
             margin-left: 2.5rem;
             margin-bottom: 0rem;
         }
@@ -71,7 +77,7 @@
     grid-row: 2 / -1;
 
     margin-top: 10rem;
-    padding: 5.3rem 3.3rem 9.1rem;
+    padding: 5.3rem 3.3rem 5.3rem;
     height: 35.2rem;
 
     background-color: $primary-color-green;
@@ -163,8 +169,8 @@
     height: 38.0rem;
 
     @include respond(tab-port) {
-        width: 19.7rem;
-        height: 19.0rem;
+        width: 22.7rem;
+        height: 22.0rem;
         margin-bottom: 20%;
     }
 

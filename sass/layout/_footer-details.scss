@@ -3,6 +3,11 @@
     grid-template-columns: 25rem 25rem;
     grid-template-rows: min-content repeat(2, 1fr);
     row-gap: 5rem;
+    transform: translateY(-5rem);
+
+    @include respond(tab-port){
+        transform: translateY(-2rem);
+    }
 
     @include respond(phone) {
         grid-template-columns: 1fr;

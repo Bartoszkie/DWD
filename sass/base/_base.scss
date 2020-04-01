@@ -37,4 +37,16 @@ body {
             }
         }
     }
+
+    section h2, footer h5 {
+        position: relative;
+
+        &::before {
+            display: block;
+            content: " ";
+            margin-top: -285px;
+            height: 360px;
+            visibility: hidden;        
+        }
+    }
 }

@@ -22,15 +22,17 @@
     <!--Styles-->
     <link rel="stylesheet" type="text/css" href="./css/glider.min.css">
     <link rel="stylesheet" type="text/css" href="./css/slider2.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
 
     <title>Dom Wczasów Dziecięcych</title>
-    <link rel="stylesheet" href="./sass/main.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo--img" src="./assets/img/logo DWD.svg" alt="logo-img" />
+            <a href="#top">
+                <img class="header__logo--img" src="./assets/img/logo DWD.svg" alt="logo-img" />
+            </a>
         </div>
         <nav class="header__menu" id="mobile-navbar">
             <ul class="header__list">
@@ -65,7 +67,7 @@
             <h1 class="heading heading-h1">Dom Wczasów Dziecięcych</h1>
             <h4 class="heading heading-h4 heading-mobile-f  m-t-s">
                 Dom Wczasów Dziecięcych w
-                Świeradowie-Zdroju jest jedynym w Górach Izerskich miejscem specjalizującym
+                Świeradowie-Zdroju jest jedynym <br /> w Górach Izerskich miejscem specjalizującym
                 się w organizacji wypoczynku dzieci i młodzieży
             </h4>
 
@@ -92,8 +94,8 @@
         </div>
     </section>
 
-    <section class="section-about-us" id="about-us">
-        <h2 class="heading heading-h2 heading-blue m-b-m">O nas</h2>
+    <section class="section-about-us">
+        <h2 class="heading heading-h2 heading-blue m-b-m" id="about-us">O nas</h2>
         <p class="paragraph center-text section-about-us__paragraph">
             Proponujemy atrakcyjny program wypoczynku w całości realizowany przez wykwalifikowaną kadrę pedagogiczną.
             Nasi nauczyciele oraz pielęgniarki zapewniają całodobową opiekę.
@@ -368,8 +370,12 @@
                     <img src="https://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
                 </li>
             </ul>
-            <a class="lSPrev"></a>
-            <a class="lSNext"></a>
+            <a class="lSPrev">
+
+            </a>
+            <a class="lSNext">
+
+            </a>
 
         </div>
     </section>
@@ -495,7 +501,6 @@
 
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/global-srcipt.js"></script>
-    <!-- <script src="./scripts/carousel.js"></script> -->
 
     <script src="./scripts/slider2.min.js"></script>
     <script src="./scripts/slider2.js"></script>

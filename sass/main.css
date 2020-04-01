@@ -50,6 +50,18 @@ body {
   }
 }
 
+body section h2, body footer h5 {
+  position: relative;
+}
+
+body section h2::before, body footer h5::before {
+  display: block;
+  content: " ";
+  margin-top: -285px;
+  height: 360px;
+  visibility: hidden;
+}
+
 .center-box {
   position: absolute;
   max-width: 120rem;
@@ -542,11 +554,18 @@ body {
   -webkit-transform: translateY(-2rem);
           transform: translateY(-2rem);
   font-weight: 600 !important;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .offer > p {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .offer > p {
+    font-size: 1.6rem;
     margin-left: 2.5rem;
     margin-bottom: 0rem;
   }
@@ -587,7 +606,7 @@ body {
   grid-column: 1 / 3;
   grid-row: 2 / -1;
   margin-top: 10rem;
-  padding: 5.3rem 3.3rem 9.1rem;
+  padding: 5.3rem 3.3rem 5.3rem;
   height: 35.2rem;
   background-color: #2C9D78;
   border-radius: 1.6rem;
@@ -707,8 +726,8 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .section-offer__img {
-    width: 19.7rem;
-    height: 19.0rem;
+    width: 22.7rem;
+    height: 22.0rem;
     margin-bottom: 20%;
   }
 }
@@ -1673,8 +1692,8 @@ img {
   content: "<";
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 51%;
+  left: 48%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
@@ -1697,8 +1716,8 @@ img {
   content: ">";
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 52%;
+  left: 53%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: block;
@@ -1928,6 +1947,15 @@ img {
       grid-template-rows: -webkit-min-content repeat(2, 1fr);
       grid-template-rows: min-content repeat(2, 1fr);
   row-gap: 5rem;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .footer-details {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2026,7 +2054,7 @@ img {
 @media only screen and (max-width: 37.5em) {
   .section-start__box {
     width: 100%;
-    padding: 0 3.75rem;
+    padding: 0 3.2rem;
   }
 }
 
@@ -2090,7 +2118,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-about-us {
-    margin-top: 6.1rem;
+    margin-top: 1.1rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
@@ -2121,7 +2149,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-offer {
-    margin-top: 7.1rem;
+    margin-top: 1.1rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
@@ -2140,7 +2168,15 @@ img {
 
 @media only screen and (max-width: 56.25em) {
   .section-offer > img {
-    width: 60%;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-offer > img {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
 }
 
@@ -2226,7 +2262,7 @@ img {
   .section-gallery > h5 {
     font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 4.6rem;
+    margin-bottom: 2.6rem;
   }
 }
 
@@ -2247,7 +2283,7 @@ img {
 
 @media only screen and (max-width: 37.5em) {
   .section-atractions {
-    margin-top: 6rem;
+    margin-top: 1rem;
     grid-column: left-space-start / right-space-end;
     -ms-grid-row: 8;
     -ms-grid-row-span: 1;
