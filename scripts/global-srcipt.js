@@ -5,6 +5,7 @@ let videoOpen = true;
 const closeVideo = document.getElementById("video-cont");
 
 const modal = document.querySelector(".modal-info");
+const cookies = document.querySelector(".cookies-bar");
 
 const header__list__link = Array.from(
   document.getElementsByClassName("header__list__link")
@@ -107,3 +108,46 @@ document.getElementById("header__btn--1").addEventListener("click", () => {
 document.getElementById("close-modal").addEventListener("click", () => {
   modal.style.display = "none";
 });
+
+document.getElementById("close-cookies").addEventListener("click", () => {
+  cookies.style.transform = "translateY(100%)";
+  createCookie("cookieAgree", true, 1);
+});
+
+window.onload = checkCookiesAgree();
+var exists = false;
+
+function checkCookiesAgree() {
+  const name = "cookieAgree";
+  getNameOfCookie(name);
+  if (exists) {
+    cookies.style.display = "none";
+  } else {
+    cookies.style.display = "flex";
+  }
+}
+
+function getNameOfCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) {
+    exists = true;
+    console.log(exists);
+    return parts
+      .pop()
+      .split(";")
+      .shift();
+  } else {
+    exists = false;
+    console.log(exists);
+  }
+}
+
+function createCookie(name, value, days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    var expires = "; expires=" + date.toGMTString();
+  } else var expires = "";
+  document.cookie = name + "=" + value + expires + "; path=/";
+}

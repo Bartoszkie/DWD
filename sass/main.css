@@ -1848,6 +1848,46 @@ img {
   right: 2rem;
 }
 
+.cookies-bar {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
+}
+
+.cookies-bar__button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 1.5rem;
+  border: 1px solid #00577C;
+  color: #00577C;
+  font-weight: 100;
+  text-align: center;
+  width: 10rem;
+  height: 3rem;
+  margin-left: 1.4rem;
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
+}
+
+.cookies-bar__button:hover {
+  background-color: #00577C;
+  color: #fff;
+}
+
 .header {
   grid-column: left-space-start / right-space-end;
   -ms-grid-row: 1;
