@@ -9,15 +9,23 @@
         transform: translateY(-2rem);
     }
 
+    @include respond(tab-port) {
+        grid-template-rows: repeat(3, min-content)
+    }
+
     @include respond(phone) {
         grid-template-columns: 1fr;
     }
 
     &__box {
         line-height: 3.5rem;
-        & > p {
-            margin: .5rem 0;
-        }
+        display: flex;
+        flex-direction: column;
+
+         & > a {
+            display: inline-block;
+            font-size: 1.4rem !important;
+         }
     }
 
     & > h5 {

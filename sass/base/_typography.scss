@@ -83,7 +83,16 @@
         font-size: $primary-font-size-sm !important;
     }
 
+    &--danger {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: #00577C;
+        font-weight: 700;
+    }
+
     &--footer--link {
+        text-decoration: none;
+
         &:hover {
             cursor: pointer;
             font-weight: $medium-font-weight;

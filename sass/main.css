@@ -232,6 +232,17 @@ body section h2::before, body footer h5::before {
   font-size: 1.4rem !important;
 }
 
+.paragraph--danger {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #00577C;
+  font-weight: 700;
+}
+
+.paragraph--footer--link {
+  text-decoration: none;
+}
+
 .paragraph--footer--link:hover {
   cursor: pointer;
   font-weight: 500;
@@ -1220,6 +1231,8 @@ body section h2::before, body footer h5::before {
 @media only screen and (max-width: 56.25em) {
   .map-container {
     width: 60%;
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
   }
 }
 
@@ -1807,6 +1820,34 @@ img {
           transform: translateY(1rem) rotate(45deg);
 }
 
+.modal-info {
+  width: 50rem;
+  height: 25rem;
+  padding: 3.7rem 5rem 1.3rem 5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 15px #00000029;
+          box-shadow: 0px 0px 15px #00000029;
+  margin: 10rem auto 0rem;
+  text-align: center;
+  position: relative;
+}
+
+.modal-info p:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.modal-info__close-btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #00577C;
+  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
 .header {
   grid-column: left-space-start / right-space-end;
   -ms-grid-row: 1;
@@ -1957,6 +1998,14 @@ img {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  .footer-details {
+    -ms-grid-rows: (min-content)[3];
+        grid-template-rows: repeat(3, -webkit-min-content);
+        grid-template-rows: repeat(3, min-content);
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .footer-details {
     -ms-grid-columns: 1fr;
@@ -1966,10 +2015,18 @@ img {
 
 .footer-details__box {
   line-height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.footer-details__box > p {
-  margin: .5rem 0;
+.footer-details__box > a {
+  display: inline-block;
+  font-size: 1.4rem !important;
 }
 
 .footer-details > h5 {

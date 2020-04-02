@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
 
+   
+
     @media screen and (max-width: 1460px){
         margin-left: 0;
         margin-right: 3rem;
@@ -16,6 +18,7 @@
 
     @include respond(tab-port) {
         width: 60%;
+        transform: translateY(-2rem);
     }
 
     @include respond(phone) {
