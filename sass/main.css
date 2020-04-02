@@ -1832,6 +1832,14 @@ img {
   position: relative;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .modal-info {
+    width: 90%;
+    height: auto;
+    padding-bottom: 5rem;
+  }
+}
+
 .modal-info p:nth-child(2) {
   margin-top: 2rem;
 }
@@ -1866,11 +1874,26 @@ img {
   height: 5rem;
   -webkit-transition: .2s ease-in-out all;
   transition: .2s ease-in-out all;
+  -webkit-box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .cookies-bar {
+    height: auto;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .cookies-bar__button {
   cursor: pointer;
   outline: none;
+  background-color: #fff;
   border-radius: 1.5rem;
   border: 1px solid #00577C;
   color: #00577C;
@@ -1886,6 +1909,12 @@ img {
 .cookies-bar__button:hover {
   background-color: #00577C;
   color: #fff;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .cookies-bar__button {
+    margin-top: 1rem;
+  }
 }
 
 .header {

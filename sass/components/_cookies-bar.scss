@@ -12,10 +12,19 @@
 
     transition: .2s ease-in-out all;
 
+    box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
+
+    @include respond(tab-port) {
+        height: auto;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        flex-direction: column;
+    }
+
     &__button {
         cursor: pointer;
         outline: none;
-
+        background-color: #fff;
         border-radius: 1.5rem;
         border: 1px solid #00577C;
         color: #00577C;
@@ -29,6 +38,10 @@
         &:hover{
             background-color: #00577C;
             color: #fff;
+        }
+
+        @include respond(tab-port) {
+            margin-top: 1rem;
         }
     }
 }
