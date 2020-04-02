@@ -269,6 +269,7 @@ body section h2::before, body footer h5::before {
 }
 
 .paragraph--white {
+  text-decoration: none;
   color: #FFFFFF !important;
 }
 
@@ -1878,6 +1879,10 @@ img {
           box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
 }
 
+.cookies-bar > p {
+  font-size: 1.2rem !important;
+}
+
 @media only screen and (max-width: 56.25em) {
   .cookies-bar {
     height: auto;
@@ -1904,6 +1909,7 @@ img {
   margin-left: 1.4rem;
   -webkit-transition: .2s ease-in-out all;
   transition: .2s ease-in-out all;
+  font-size: 1.2rem !important;
 }
 
 .cookies-bar__button:hover {
@@ -2009,7 +2015,7 @@ img {
 
 @media only screen and (max-width: 87.5em) {
   .header__list__item:not(:last-child) {
-    margin: 0 2.5rem;
+    margin: 0 2.1rem;
   }
 }
 
@@ -2052,9 +2058,9 @@ img {
   display: grid;
   -ms-grid-columns: 25rem 25rem;
       grid-template-columns: 25rem 25rem;
-  -ms-grid-rows: min-content (1fr)[2];
-      grid-template-rows: -webkit-min-content repeat(2, 1fr);
-      grid-template-rows: min-content repeat(2, 1fr);
+  -ms-grid-rows: min-content min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content min-content;
   row-gap: 5rem;
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem);

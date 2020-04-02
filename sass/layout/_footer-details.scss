@@ -1,7 +1,7 @@
 .footer-details {
     display: grid;
     grid-template-columns: 25rem 25rem;
-    grid-template-rows: min-content repeat(2, 1fr);
+    grid-template-rows: min-content min-content min-content; 
     row-gap: 5rem;
     transform: translateY(-5rem);
 
