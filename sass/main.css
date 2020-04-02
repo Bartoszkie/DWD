@@ -1215,6 +1215,8 @@ body section h2::before, body footer h5::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
 }
 
 @media screen and (max-width: 1460px) {
@@ -2066,9 +2068,10 @@ img {
   row-gap: 5rem;
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem);
+  margin-left: 2rem;
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 1124px) {
   .footer-details {
     -webkit-transform: translateY(-2rem);
             transform: translateY(-2rem);
@@ -2080,6 +2083,7 @@ img {
     -ms-grid-rows: (min-content)[3];
         grid-template-rows: repeat(3, -webkit-min-content);
         grid-template-rows: repeat(3, min-content);
+    margin-left: 0rem;
   }
 }
 

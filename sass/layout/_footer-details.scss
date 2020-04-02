@@ -1,16 +1,19 @@
 .footer-details {
     display: grid;
     grid-template-columns: 25rem 25rem;
-    grid-template-rows: min-content min-content min-content; 
+    grid-template-rows: min-content min-content min-content;
     row-gap: 5rem;
     transform: translateY(-5rem);
 
-    @include respond(tab-land){
+    margin-left: 2rem;
+
+    @media only screen and (max-width: 1124px) {
         transform: translateY(-2rem);
     }
 
     @include respond(tab-port) {
-        grid-template-rows: repeat(3, min-content)
+        grid-template-rows: repeat(3, min-content);
+        margin-left: 0rem;
     }
 
     @include respond(phone) {
