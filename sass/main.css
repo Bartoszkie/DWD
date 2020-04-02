@@ -295,6 +295,7 @@ body section h2::before, body footer h5::before {
 }
 
 .btn, .btn:link, .btn:visited {
+  cursor: pointer;
   text-decoration: none;
   font-size: 1.6rem;
   border-radius: 2.8rem;
@@ -1877,6 +1878,7 @@ img {
   transition: .2s ease-in-out all;
   -webkit-box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 -0.3rem 0.5rem -0.2rem rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
 }
 
 .cookies-bar > p {
