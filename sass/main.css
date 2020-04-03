@@ -93,6 +93,10 @@ body section h2::before, body footer h5::before {
   }
 }
 
+.small-lh {
+  line-height: 1.7;
+}
+
 .heading-mobile-f {
   display: block;
 }
@@ -115,6 +119,10 @@ body section h2::before, body footer h5::before {
 
 .m-t-s {
   margin-top: .45rem;
+}
+
+.m-t-mm {
+  margin-top: 2.1rem;
 }
 
 .m-t-m {
@@ -1826,7 +1834,8 @@ img {
 
 .modal-container {
   position: fixed;
-  height: 100vh;
+  z-index: 2000;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
