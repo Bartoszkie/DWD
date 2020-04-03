@@ -122,7 +122,7 @@ body section h2::before, body footer h5::before {
 }
 
 .m-t-mm {
-  margin-top: 2.1rem;
+  margin-top: 0.8rem;
 }
 
 .m-t-m {
@@ -1880,6 +1880,34 @@ img {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-container .modal-info__close-btn::after, .modal-container .modal-info__close-btn::before {
+  cursor: pointer;
+  position: absolute;
+  width: 2.4rem;
+  height: .2rem;
+  content: "";
+  display: inline-block;
+  background-color: #00577C;
+}
+
+.modal-container .modal-info__close-btn::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal-container .modal-info__close-btn::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .cookies-bar {

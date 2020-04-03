@@ -50,6 +50,32 @@
             position: absolute;
             top: 2rem;
             right: 2rem;
+
+            height: 2.4rem;
+            width: 2.4rem;
+
+            display: flex;
+            justify-content: center;
+
+            &::after, &::before {
+                cursor: pointer;
+
+                position: absolute;
+
+                width: 2.4rem;
+                height: .2rem;
+                content: "";
+                display: inline-block;
+                background-color: #00577C;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
         }
     }
 }
