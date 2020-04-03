@@ -6,6 +6,7 @@ const closeVideo = document.getElementById("video-cont");
 
 const modal = document.querySelector(".modal-info");
 const cookies = document.querySelector(".cookies-bar");
+const modalContainer = document.querySelector(".modal-container");
 
 const header__list__link = Array.from(
   document.getElementsByClassName("header__list__link")
@@ -107,6 +108,10 @@ document.getElementById("header__btn--1").addEventListener("click", () => {
 
 document.getElementById("close-modal").addEventListener("click", () => {
   modal.style.display = "none";
+});
+
+document.getElementById("modal-container").addEventListener("click", () => {
+  modalContainer.style.display = "none";
 });
 
 document.getElementById("close-cookies").addEventListener("click", () => {

@@ -1824,7 +1824,20 @@ img {
           transform: translateY(1rem) rotate(45deg);
 }
 
-.modal-info {
+.modal-container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container .modal-info {
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 50rem;
   height: 25rem;
   padding: 3.7rem 5rem 1.3rem 5rem;
@@ -1837,18 +1850,18 @@ img {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .modal-info {
+  .modal-container .modal-info {
     width: 90%;
     height: auto;
     padding-bottom: 5rem;
   }
 }
 
-.modal-info p:nth-child(2) {
+.modal-container .modal-info p:nth-child(2) {
   margin-top: 2rem;
 }
 
-.modal-info__close-btn {
+.modal-container .modal-info__close-btn {
   cursor: pointer;
   outline: none;
   border: none;
@@ -1914,6 +1927,7 @@ img {
   -webkit-transition: .2s ease-in-out all;
   transition: .2s ease-in-out all;
   font-size: 1.2rem !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 .cookies-bar__button:hover {
