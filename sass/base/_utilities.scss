@@ -17,6 +17,10 @@
     @include respond(phone) {
         top: 60%;
     }
+
+    @media only screen and (max-height: 575px) {
+       top: 60%;
+    }
 }
 
 .small-lh {
